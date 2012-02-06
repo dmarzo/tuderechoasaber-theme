@@ -1,0 +1,47 @@
+<div id="right_column_flip">
+    <h2>Ayuda</h2>
+    
+    <h3><%= link_to_unless_current "Quiénes somos", help_about_path %></h3>
+    <ul class="no_bullets">
+        <li><%= link_to "¿Cómo funciona?", help_about_path(:anchor => 'how') %></li>
+        <li><%= link_to "¿Quién creó AsktheEU.org?", help_about_path(:anchor => 'who') %></li>
+        <li><%= link_to "AsktheEU.org Supporters", help_about_path(:anchor => 'supporters') %></li>
+    </ul>
+    
+    <h3><%= link_to_unless_current "¿Puedo ayudar?", help_help_out_path %></h3>
+    
+    <h3><%= link_to_unless_current "Guía para solicitantes", help_requesting_path %></h3>
+    <ul class="no_bullets">
+        <li><%= link_to "Solicitar información", help_requesting_path(:anchor => 'making_requests') %></li>
+        <li><%= link_to "Localizar los organismos de la UE", help_requesting_path(:anchor => 'finding_bodies') %></li>
+        <li><%= link_to "Idiomas", help_requesting_path(:anchor => 'languages') %></li>
+        <li><%= link_to "Consejos sobre las solicitudes", help_requesting_path(:anchor => 'tips') %></li>
+        <li><%= link_to "Respuestas y apelaciones", help_requesting_path(:anchor => 'answers_appeals') %></li>
+        <li><%= link_to "Moderación de las solicitudes", help_requesting_path(:anchor => 'request_moderation') %></li>
+    </ul>
+    
+    <h3><%= link_to_unless_current "Tu derecho a saber", help_right_to_know_path %></h3>
+        
+    <h3><%= link_to_unless_current "Tu privacidad", help_privacy_path %></h3>
+    
+    <h3><%= link_to_unless_current "Información para funcionarios de la UE", help_officers_path %></h3>
+    <ul class="no_bullets">
+        <li><%= link_to "¿Qué es AsktheEU.org?", help_officers_path(:anchor => 'what') %></li>
+        <li><%= link_to "Proceso de las solicitudes", help_officers_path(:anchor => 'processing_requests') %></li>
+        <li><%= link_to "Privacidad", help_officers_path(:anchor => 'privacy_issues') %></li>
+    </ul>
+
+    <h3></h3>
+    <h3><%= link_to_unless_current "Acerca del Software", help_alaveteli_path %></h3>
+
+    <h3><%= link_to_unless_current "API para programadores", help_api_path %></h3>
+    
+    <h3><%= link_to_unless_current "Agradecimientos", help_credits_path %></h3>
+
+    <h2 id="contact">Contáctanos</h2>
+    <p>Si tu pregunta no está resuelta aquí, o quieres hacernos llegar algún comentario
+        sobre la web, <%= link_to 'contáctanos', help_contact_path %>.
+    </p>
+</div>
+
+
