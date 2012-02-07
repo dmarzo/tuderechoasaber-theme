@@ -2,9 +2,9 @@ PublicBodyCategories.add(:es, [
     "Administración Central",
         [ "ministerio", "Ministerios", "un ministerio" ],
         [ "agencia_estatal", "Agencias Estatales", "una agencia"],
-    "CCAA",
-        [ "ca", "Comunidades Autónomas", "una comunidad autónoma"],
+        [ "delegacion_gobierno", "Delegaciones del Gobierno", "una delegación del gobierno"],
+    "Administración Autonómica",
+        [ "ca", "Gobiernos Autónomicos", "un gobierno autonómico"],
     "Administración Local",
-        [ "ayuntamiento_madrid", "Ayuntamientos de Madrid", "un ayuntamiento"],
-        [ "ayuntamiento_cataluña", "Ayuntamientos de Cataluña", "un ayuntamiento"],
+        [ "ayuntamiento", "Ayuntamientos", "un ayuntamiento"]
 ])
