@@ -69,13 +69,13 @@ body {
 #banner {
     background: #F5F5F5;
     border: none;
-    height: 150px;
+    height: 120px;
     position: relative;
 }
 
 #banner_inner {
     width: 960px;
-    height: 150px;
+    height: 120px;
 }
     #banner_inner a:hover {
         text-decoration: underline; 
@@ -129,6 +129,7 @@ div.lang {
     font-weight: bold;
     float: right;
     margin-left: 0px;
+    top: 90px;
 }
     #topnav ul li {
         padding-left: 8px;
