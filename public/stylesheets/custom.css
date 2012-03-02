@@ -293,6 +293,11 @@ h3, h3 a {
     padding: 0px 18px;
 }
 
+#frontpage-share-buttons {
+    float: left;
+    margin: 15px 12px 0px 36px;
+}
+
 #frontpage-100-days-counter {
     background-color: #E84E00;
     background: url("/tuderechoasaber-theme/images/frontpage-counter-background.png") no-repeat scroll 0 0 transparent;
