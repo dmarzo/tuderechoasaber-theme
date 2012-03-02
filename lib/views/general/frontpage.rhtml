@@ -1,5 +1,69 @@
 <% view_cache :ttl => 5.minutes.to_i, :tag => I18n.locale do %>
 
-Estamos en beta!
+<div id="frontpage-intro">
+</div>
+
+<div id="frontpage-content">
+    <div id="frontpage-inner-content">
+        <div id="frontpage-search-box">
+            <h4>Haz una búsqueda entre las peticiones ya realizadas:</h4>
+
+            <div id="frontpage-search-form">
+              <% form_tag({:action => "search_redirect"}, {:id => "search_form"}) do %>
+              <div>
+                <%= text_field_tag 'query', params[:query], { :size => 80 } %>
+                <%= submit_tag _('Search') %>
+              </div>
+              <% end %>
+            </div>            
+        </div>
+        
+        <div id="frontpage-updates">
+            <div id="frontpage-updates-news">
+                <h2>Novedades</h2>
+                
+                <div class="frontpage-blog-post left">
+                    <img src="/tuderechoasaber-theme/images/loremipsum.png" width="278"/>
+                    <h4>Duis autem vel eum iriure dolor in hendret in vulputate velit esse molese consequat.</h4>
+                    <p>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio eros et accumsan et iusto odio dignissim...</p>
+                    <p><a href="#">Leer más</a></p>
+                </div>
+
+                <div class="frontpage-blog-post right">
+                    <img src="/tuderechoasaber-theme/images/loremipsum.png" width="278"/>
+                    <h4>Duis autem vel eum iriure dolor in hendret in vulputate velit esse molese consequat.</h4>
+                    <p>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio eros et accumsan et iusto odio dignissim...</p>
+                    <p><a href="#">Leer más</a></p>
+                </div>
+            </div>
+            
+            <div id="frontpage-updates-requests">
+                <h2>Peticiones destacadas</h2>
+                
+                <div class="frontpage-featured-request">
+                    <h4><a href="#">Duis autem vel eum iriure dolor in hendret in velit esse molese consequat...</a></h4>
+                    <div class="frontpage-request-tracker">
+                        <div class="counter">24</div>
+                        <div class="counter-label">Personas siguiendo esta petición</div>
+                        <div class="track-button">También quiero saber</div>
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+                                
+                <div class="frontpage-featured-request last">
+                    <h4><a href="#">Duis autem vel eum iriure dolor in hendret in velit esse molese consequat...</a></h4>
+                    <div class="frontpage-request-tracker">
+                        <div class="counter">24</div>
+                        <div class="counter-label">Personas siguiendo esta petición</div>
+                        <div class="track-button">También quiero saber</div>
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="clear:both"></div>
+        </div>
+    </div>
+</div>
 
 <% end %>

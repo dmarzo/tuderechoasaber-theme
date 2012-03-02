@@ -67,7 +67,7 @@ body {
 
 /** HEADER **/ 
 #banner {
-    background: #F5F5F5;
+    background: #ECECEC;
     border: none;
     height: 120px;
     position: relative;
@@ -132,8 +132,7 @@ div.lang {
     top: 90px;
 }
     #topnav ul li {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding: 6px 8px 5px 8px;
         margin-right: 8px;
 
         border-top-left-radius: 5px;
@@ -217,6 +216,176 @@ h3, h3 a {
 
 /** FRONTPAGE **/
 
+.front #wrapper, .front #content {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#frontpage-intro {
+    width: 960px;
+    margin: auto;
+    position: relative;
+    
+    height: 300px; /** XXXX */
+}
+
+#frontpage-content {
+    background-color: #F5F5F5;
+}
+
+#frontpage-inner-content {
+    width: 960px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+#frontpage-search-box {
+    background-color: #D9D9D9;
+    float: left;
+    margin: 20px 12px 20px 12px;
+    padding: 12px 18px;
+    border-radius: 5px;
+    width: 900px;
+}
+    #frontpage-search-box h4 {
+      font-family: 'Open Sans', Helvetica, Arial;
+      font-weight: 600;
+      font-size: 18px;
+      color: #3C3C3B;
+      line-height: 1.1;
+      
+      width: 260px;
+      float: left;
+      margin: 10px 0px 10px 30px;
+    }
+    
+#frontpage-search-form {
+    float: left;
+    margin: 10px;
+}
+    #frontpage-search-form #search_form {
+        margin-bottom: 10px;
+    }
+  
+    #frontpage-search-form #query {
+        height: 24px;
+        width: 430px;
+        font-size: 18px;
+    }
+    
+    #frontpage-search-form input[type="submit"] {
+        background: url("/tuderechoasaber-theme/images/button-gradient.png") repeat scroll 0 0 transparent;
+        height: 34px;
+        width: 100px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+
+#frontpage-updates h2 {
+    font-family: 'Open Sans', Helvetica, Arial;
+    font-weight: 700;
+    font-size: 22px;
+    color: #3C3C3B;
+    
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 12px;
+}
+
+#frontpage-updates-news,
+#frontpage-updates-requests {
+    background-color: #FFFFFF;
+    float: left;
+    margin: 20px 12px 30px 12px;
+    padding: 12px 18px;
+
+    border-radius: 5px;
+    border-bottom: 2px solid #C6C6C5;
+}
+
+#frontpage-updates-news {
+    width: 580px;
+}
+
+.frontpage-blog-post {
+    font-family: 'Open Sans', Helvetica, Arial;
+    width: 278px;
+    line-height: 1.1;
+}
+    #frontpage-updates-news .left {
+        padding-right: 12px;
+        float: left;
+    }
+    #frontpage-updates-news .right {
+        padding-left: 12px;
+        float: right;
+    }
+    .frontpage-blog-post h4 {
+        font-weight: 700;
+        font-size: 16px;
+        color: #3C3C3B;
+        margin: 12px 0px;
+    }
+    .frontpage-blog-post p {
+        font-weight: 600;
+        font-size: 12px;
+        color: #6F6F6E;
+    }
+
+#frontpage-updates-requests {
+    width: 260px;
+    line-height: 1.1;
+}
+.frontpage-featured-request {
+    font-family: 'Open Sans', Helvetica, Arial;
+    margin: 0px 12px;
+    
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 12px;
+}
+    .frontpage-featured-request h4 {
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .frontpage-featured-request.last {
+        border-bottom: 0px;
+    }
+
+.frontpage-request-tracker {
+    padding: 0px 12px 8px 12px;
+    border: 2px solid #ECECEC;
+    border-radius: 5px;
+    margin-top: -10px;
+}
+    .frontpage-request-tracker .counter {
+      float: left;
+      width: 118px;
+      font-weight: 700;
+      font-size: 60px;
+      color: #3C3C3B;
+      text-align: right;
+    }
+    .frontpage-request-tracker .counter-label {
+      float: left;
+      width: 78px;
+      font-weight: 600;
+      font-size: 12px;
+      color: #6F6F6E;
+      line-height: 1.5;
+      padding-top: 6px;
+      padding-left: 6px;
+    }
+    .frontpage-request-tracker .track-button {
+      float: left;
+      font-weight: 700;
+      font-size: 13px;
+      color: #FFFFFF;
+      background-color: #E84E00;
+      padding: 8px 16px;
+      border-radius: 5px;
+      margin-left: 18px;
+    }
 
 /** GENERAL **/
 .request_listing span.head a, 
@@ -401,7 +570,7 @@ span.desc {
 
 div.correspondence {
     width: 540px;
-    background: none repeat scroll 0 0 #F5F5F5;
+    background: none repeat scroll 0 0 #ECECEC;
     font-family: Verdana, Helvetica, Arial;
     font-size: 12px !important;
 }
@@ -550,7 +719,8 @@ TODO: Need to add states for
 #footer {
     height: 90px;
     margin: 0px;
-    border-top-width: 1px;
+    border-top: 1px solid #C6C6C5;
+    background-color: #ECECEC;
 }
 
 #footer-inner {
