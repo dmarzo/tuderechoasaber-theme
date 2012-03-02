@@ -230,14 +230,58 @@ h3, h3 a {
 
 #frontpage-intro-lead {
     width: 616px;
-    height: 310px;
+    height: 280px;
+
+    font-family: 'Open Sans', Helvetica, Arial;
+    line-height: 1.1;
     
     background-color: #ECECEC;
     background: url("/tuderechoasaber-theme/images/frontpage-lead-background.png") no-repeat scroll 0 0 transparent;
     float: left;
     margin: 50px 12px 30px 12px;
-    padding: 0px;
+    padding: 20px 0px 20px 0px;
 }
+    .frontpage-lead-cell {
+        float: left;
+        width: 114px;
+        height: 130px;
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    .frontpage-lead-cell.short {
+        height: 60px;
+        margin-top: -30px;
+    }
+    #frontpage-intro-lead h2 {
+        color: #E84E00;
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 35px;
+    }
+    .frontpage-lead-enum {
+        color: #3C3C3B;
+        font-size: 118px;
+        font-weight: 700;
+        margin-top: -5px;
+    }
+    .frontpage-lead-text {
+        color: #3C3C3B;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0px;
+    }
+    #frontpage-lead-button {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 700;
+
+        margin-left: -10px;
+        padding: 7px 10px 7px 10px;
+        
+        background-color: #E84E00;
+        border-radius: 5px;
+        border-bottom: 2px solid #C6C6C5;
+    }
 
 #frontpage-intro-sidebar {
     width: 260px;
