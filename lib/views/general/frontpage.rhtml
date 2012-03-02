@@ -26,8 +26,12 @@
 
     <div id="frontpage-intro-sidebar">
         <div id="frontpage-100-days-counter">
+            <div id="digit-1" class="digit"></div>
+            <div id="digit-2" class="digit"></div>
+            <div id="digit-3" class="digit"></div>
+            <div style="clear:both"></div>
             <h4>Cuenta atrás por la transparencia en España</h4>
-            <p>Quedan 25 días para que el PP cumpla su promesa de presentar una ley de acceso a la información</p>
+            <p>Quedan <span id="days-left"></span> días para que el PP cumpla su promesa de presentar una ley de acceso a la información</p>
         </div>
     </div>
     
@@ -96,5 +100,27 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    // http://stackoverflow.com/questions/3942454/how-to-get-the-duration-of-days-from-today-to-a-specified-date-in-javascript
+    function daysFrom(from){
+        // strings in the form'yyyy-mm-dd' or 'yyyy-m-d'
+        // split the strings on dashes and possible leading 0, 
+        // to avoid '08' becoming octal '10'
+
+        to= new Date();
+
+        from= from.split(/\-0?/);
+        from= new Date(+from[0], from[1]-1, +from[2]);
+
+        return Math.round((to-from)/86400000);
+    }
+
+    daysLeft = 100-daysFrom('2011-12-19');
+    document.getElementById("days-left").innerHTML = daysLeft;
+    document.getElementById("digit-1").innerHTML = '0';
+    document.getElementById("digit-2").innerHTML = (daysLeft - (daysLeft % 10)) / 10;
+    document.getElementById("digit-3").innerHTML = daysLeft % 10;
+</script>
 
 <% end %>
