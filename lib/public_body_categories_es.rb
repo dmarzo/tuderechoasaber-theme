@@ -1,9 +1,9 @@
 PublicBodyCategories.add(:es, [
     "Administración Central",
-        [ "ministerio", "Ministerios", "un ministerio" ],
+        [ "ministerio", "Ministerios", "un Ministerio" ],
         [ "secretaria_estado", "Secretarías de Estado", "una Secretaría de Estado"],
         [ "direccion_general", "Direcciones Generales", "una Dirección General"],
-        [ "agencia_estatal", "Agencias Estatales y Otros Organismos", "una agencia estatal u órganismo dependiente"],
+        [ "agencia_estatal", "Agencias Estatales y Otros Organismos", "una Agencia Estatal u órganismo dependiente"],
         [ "embajada", "Embajadas", "una Embajada Española"],
         [ "organo_constitucional", "Órganos Constitucionales", "un órgano constitucional"],
         [ "organo_regulador", "Organismos Reguladores", "un organismo regulador"],
