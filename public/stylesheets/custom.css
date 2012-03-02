@@ -226,9 +226,44 @@ h3, h3 a {
     width: 960px;
     margin: auto;
     position: relative;
-    
-    height: 300px; /** XXXX */
 }
+
+#frontpage-intro-lead {
+    width: 616px;
+    height: 310px;
+    
+    background-color: #ECECEC;
+    background: url("/tuderechoasaber-theme/images/frontpage-lead-background.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    margin: 50px 12px 30px 12px;
+    padding: 0px;
+}
+
+#frontpage-intro-sidebar {
+    width: 260px;
+    float: left;
+    
+    margin: 50px 12px 30px 12px;
+    padding: 0px 18px;
+}
+
+#frontpage-100-days-counter {
+    background-color: #E84E00;
+    background: url("/tuderechoasaber-theme/images/frontpage-counter-background.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    border-radius: 5px;
+    padding: 140px 12px 0px 12px;
+    
+    font-family: 'Open Sans', Helvetica, Arial;
+    color: #ECECEC;
+    text-align: center;
+    line-height: 1.1;
+}
+    #frontpage-100-days-counter h4 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
 
 #frontpage-content {
     background-color: #F5F5F5;
