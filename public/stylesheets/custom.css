@@ -270,11 +270,13 @@ h3, h3 a {
         font-weight: 600;
         margin: 0px;
     }
-    #frontpage-lead-button {
+    #frontpage-lead-button a {
         color: #FFFFFF;
         font-size: 16px;
         font-weight: 700;
+    }
 
+    #frontpage-lead-button {
         margin-left: -10px;
         padding: 7px 10px 7px 10px;
         
