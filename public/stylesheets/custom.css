@@ -146,7 +146,7 @@ div.lang {
 /** MAIN SITE **/
 h1, h1 a {
     font-family: 'Open Sans', Helvetica, Arial;
-    color: #E94E00;
+    color: #414141;
     font-size: 28px;
     font-weight: 600;
     margin-top: 30px;
@@ -155,14 +155,14 @@ h1, h1 a {
 
 h2, h2 a {
     font-family: 'Open Sans', Helvetica, Arial;
-    color: #7bbb58;
+    color: #F05A29;
     font-size: 18px;
     font-weight: 700;
 }
 
 h3, h3 a {
     font-family: Helvetica, Arial;
-    color: #E94E00;   
+    color: #414141;   
     font-size: 14px;
     font-weight: bold;
 }
@@ -526,6 +526,7 @@ a,
 form input[type="submit"], a.link_button_green, a.link_button_green_large {
     font-family: 'Open Sans', Helvetica, Arial;
     font-weight: 600;
+    background: url("/tuderechoasaber-theme/images/button-gradient.png") repeat scroll 0 0 transparent;
 }
 
 form input[type="submit"] {
