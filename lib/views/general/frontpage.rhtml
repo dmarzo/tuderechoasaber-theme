@@ -2,16 +2,16 @@
 
 <div id="frontpage-intro">
     <div id="frontpage-intro-lead">
-        <div class="frontpage-lead-cell"><h2>Ejerce tu derecho a saber.</h2></div>
+        <div class="frontpage-lead-cell"><h2><%= _("Ejerce tu derecho a saber.") %></h2></div>
         <div class="frontpage-lead-cell"><p class="frontpage-lead-enum">1</p></div>
         <div class="frontpage-lead-cell"><p class="frontpage-lead-enum">2</p></div>
         <div class="frontpage-lead-cell"><p class="frontpage-lead-enum">3</p></div>
         <div style="clear:both"></div>
         
-        <div class="frontpage-lead-cell"><p class="frontpage-lead-text">Para obtener información de instituciones públicas:</p></div>
-        <div class="frontpage-lead-cell"><p class="frontpage-lead-text">Piensa una pregunta para un organismo público.</p></div>
-        <div class="frontpage-lead-cell"><p class="frontpage-lead-text">Nosotros enviamos la pregunta por ti.</p></div>
-        <div class="frontpage-lead-cell"><p class="frontpage-lead-text">Te avisamos cuando haya una respuesta.</p></div>
+        <div class="frontpage-lead-cell"><p class="frontpage-lead-text"><%= _("Para obtener información de instituciones públicas:") %></p></div>
+        <div class="frontpage-lead-cell"><p class="frontpage-lead-text"><%= _("Piensa una pregunta para un organismo público.") %></p></div>
+        <div class="frontpage-lead-cell"><p class="frontpage-lead-text"><%= _("Nosotros enviamos la pregunta por ti.") %></p></div>
+        <div class="frontpage-lead-cell"><p class="frontpage-lead-text"><%= _("Te avisamos cuando haya una respuesta.") %></p></div>
         <div style="clear:both"></div>
 
         <div class="frontpage-lead-cell short"></div>
@@ -30,8 +30,8 @@
             <div id="digit-2" class="digit"></div>
             <div id="digit-3" class="digit"></div>
             <div style="clear:both"></div>
-            <h4>Cuenta atrás por la transparencia en España</h4>
-            <p>Quedan <span id="days-left"></span> días para que el PP cumpla su promesa de presentar una ley de acceso a la información</p>
+            <h4><%= _("Cuenta atrás por la transparencia en España") %></h4>
+            <p><%= _("Quedan <span id='days-left'></span> días para que el PP cumpla su promesa de presentar una ley de acceso a la información") %></p>
         </div>
 
         <div id="frontpage-share-buttons">
@@ -49,7 +49,7 @@
 <div id="frontpage-content">
     <div id="frontpage-inner-content">
         <div id="frontpage-search-box">
-            <h4>Haz una búsqueda entre las peticiones ya realizadas:</h4>
+            <h4><%= _("Haz una búsqueda entre las peticiones ya realizadas:") %></h4>
 
             <div id="frontpage-search-form">
               <% form_tag({:action => "search_redirect"}, {:id => "search_form"}) do %>
@@ -63,7 +63,7 @@
         
         <div id="frontpage-updates">
             <div id="frontpage-updates-news">
-                <h2>Novedades</h2>
+                <h2><%= _("Novedades") %></h2>
                 
                 <div class="frontpage-blog-post left">
                     <img src="/tuderechoasaber-theme/images/loremipsum.png" width="278"/>
@@ -81,7 +81,7 @@
             </div>
             
             <div id="frontpage-updates-requests">
-                <h2>Peticiones destacadas</h2>
+                <h2><%= _("Peticiones destacadas") %></h2>
                 
                 <div class="frontpage-featured-request">
                     <h4><a href="#">Duis autem vel eum iriure dolor in hendret in velit esse molese consequat...</a></h4>
