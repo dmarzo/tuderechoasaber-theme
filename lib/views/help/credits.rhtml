@@ -4,7 +4,8 @@
 
 <div id="left_column_flip">
     <h1>Agradecimientos</h1>
-    <p>Agradecimientos especiales:
+    <p>
+        No podríamos haber hecho esta web sin el apoyo de mucha gente. Gracias:
         <ul>
             <li>Al equipo de Access Info Europe: Helen Darbishire, Pam Bartlett, Lydia Medland, Victoria Anderica, Álvaro Rodríguez, Andreas Pavlou y Alicia Costas.</li>
             
@@ -12,15 +13,19 @@
             
             <li class="XXX">A todos los voluntarios que han hecho posible esta página, gracias por las traducciones, los contactos y sobre todo por el interés mostrado y el apoyo constante.</li>
             
+            <li>A Olga por el estupendo <a href="https://vimeo.com/25811353">vídeo que grabamos en Sol</a>, y a toda la gente que pasó por el grupo de Ley de Transparencia Ya para difundirlo.</li>
+
             <li>Diego Berjón por los diseños y por la paciencia.</li>
             
+            <li>A Rafa por editar el vídeo de tuderechoasaber.es, y a Guy por la narración.</li>
+
             <li>A Goteo por creer en este proyecto desde el principio.</li>
             
-            <li class="XXX">A los patrocinadores.</li>
-            
-            <li class="XXX">Video: Rafa, editing. Guy, voice over.</li>
-            <li class="XXX">A todos por la difusión</li>
-            <li class="XXX">A la gente del vídeo de sol (especialmente Olga)</li>
+            <li>A los <%= link_to "patrocinadores", help_about_path(:anchor => 'supporters') %>.</li>
+                
+            <li>A todos por la difusión</li>
         </ul>
+        Y a todos <a href="http://www.goteo.org/project/tuderechoasaber.es">los donantes de Goteo</a>:
+        <%= render :partial => 'help/goteo_donors' %>
     </p>
 </div>
