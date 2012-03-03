@@ -53,7 +53,7 @@
     <p>Para poner en marcha esta web hemos contado con <%= link_to "el apoyo de más de una decena de voluntarios", help_credits_path %> que nos han ayudado a traducir textos, buscar información de las administraciones, organizar eventos, contactar a la prensa... ¡Muchas gracias!</p>
     
     <h2 id="supporters">Patrocinadores de tuderechoasaber.es</h2>
-    <p>No habríamos podido hacer esta web sin el apoyo de más de 150 ciudadanos que creyeron en esta plataforma y nos dieron dinero a través de <a href="http://www.goteo.org/">la plataforma de crowdfunding Goteo</a>. Si te gusta nuestra iniciativa, <%= link_to "tú también puedes hacer tu donación", help_help_out_path %>.</p>
+    <p>No habríamos podido hacer esta web sin el apoyo de <%= link_to_unless_current "más de 150 ciudadanos", help_credits_path %> que creyeron en este proyecto y nos dieron dinero a través de <a href="http://www.goteo.org/">la plataforma de crowdfunding Goteo</a>. Si te gusta nuestra iniciativa, <%= link_to "tú también puedes hacer tu donación", help_help_out_path %>.</p>
 
     <%= render :partial => 'help/supporters' %>
 </div>
