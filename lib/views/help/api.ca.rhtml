@@ -1,0 +1,54 @@
+<% @title = "API per a programadors" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+  <h1><%=@title %></h1>
+
+    <h2>Introducció</h2>
+      <p>tuderechoasaber.es creu en els principis d’Open Data (enllaç als principis) i els promou. Per això el programari que utilitzem i totes les dades que recollim estan disponibles per als programadors que vulguin utilitzar-les en altres llocs web.</p>
+      <p>tuderechoasaber.es encara no te una API completa, però progressivament anirem afegint gran quantitat de coses que s'assimilen en el seu us a una API, tal i com necessiten els programadors.</p>
+
+    <h2>Enllaços a noves sol·licituds</h2>
+      <p>Si vols animar als teus usuaris a posar-se en contacte amb una autoritat pública específica, utilitzar URLs de la forma:</p>
+      <blockquote>
+      <%= link_to new_request_to_body_url(:url_name => "ministerio_de_sanidad") , new_request_to_body_url(:url_name => "ministerio_de_sanidad") %>
+      </blockquote>
+      <p>Aquests són els paràmetres que pots afegir a les URLs, directament a la URL o des d'un formulari:</p>
+
+      <ul>
+          <li> <strong>title</strong> - títol predefinit de la nova sol·licitud.</li>
+          <li> <strong>default_letter</strong> - text predefinit del cos de la carta. La formula de l'encapçalament (Benvolgut ...) i l'acomiadament (Salutacions ...) s'afegiran a l'inici i al final.</li>
+          <li> <strong>body</strong> - en alternativa a <tt>default_letter</tt> això posa com a predefinit el text sencer de la sol·licitud, deixant la possibilitat de personalitzar l'encapçalament i l'acomidament.</li>
+          <li> <strong>tags</strong> - llista d'etiquetes separades per espasi, per a que puguis cercar i enllaçar posteriorment a les sol·licituds realitzades. Per exemple, <tt>openlylocal spending_id:12345</tt>. Els dos punts (:) indiquen que l'etiqueta conté un valor ('machine tag') que pot incloure punt.</li>
+      </ul>
+
+    <h2>Feeds RSS (realment, Atom)</h2>
+      <p>La majoria de les pàgines que inclouen sol·liciutds d'accés a la informació [M3] tenen feeds Atom que pots utilitzar per a obtenir actualitzacions i enllaços en format XML. Pots trobar la URL del feed Atom amb una de les següents opcions:
+      <ul>
+          <li>Cercar el símbol <img src="/images/feed-16.png" alt=""/>.</li>
+          <li>Examina la declaració <tt>&lt;link rel="alternate" type="application/atom+xml"&gt;</tt> a la capçalera del codi HTML.</li>
+          <li>Afegeix <tt>/feed</tt> al final de la URL.</li>
+      </ul>
+      </p>
+
+      <p>Les cerques avançades també suporten feeds en format Atom. Pots fer qualsevol cosa amb aquest format: consultes per autoritat, per tipus d'arxiu, per data o per estat. Per a més detalls, consulta els <%= link_to 'consells de la cerca avançada', advanced_search_path %>.</p>
+
+    <h2>Dades estructurades en JSON</h2>
+      <p>Moltes pàgines tenen una versió JSON que permet descarregar informació sobre els objectes de forma estructurada. Per trobar-los:
+      <ul>
+          <li>Afegeix <tt>.json</tt> al final de la URL.</li>
+          <li>Cerca la declaració <tt>&lt;link rel="alternate" type="application/json"&gt;</tt> a la capçalera del codi HTML.</li>
+      </ul>
+      </p>
+
+      <p>Sol·licituds, usuaris i autoritats, tots tenen una versió JSON amb informació bàsica sobre ells. Cada format Atom te un equivalent JSON amb informació sobre els ojectisu inclosos al feed.</p>
+    
+    <h2>Informació sobre tots els organismes públics d'Espanya</h2>
+      <p>Si vols informació sobre totes les institucions públiques que tenim registrades e tuderechoasaber.com, pots descarregar-te un fitxer CSV que tenim disponible aquí: <%= link_to "all-authorities.csv", all_public_bodies_csv_url() %></p>
+
+  <p>Si necessites més funcionalitats a l'API que encara no estan disponibles, si us plau posa't en contacte <a href="/help/contact">amb nosaltres</a>. És una feina en procés, afegirem funcionalitats a mesura que la gent ens les demani.</p>
+
+  <div id="hash_link_padding"></div>
+</div>
+

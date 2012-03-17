@@ -12,8 +12,8 @@ PublicBodyCategories.add(:es, [
         [ "universidad", "Universidades", "una universidad"],
         [ "partido_politico", "Partidos Políticos", "un partido político"],
     "Administración Autonómica",
-        [ "ca", "Gobiernos Autónomicos", "un gobierno autonómico"],
-        [ "asamblea_ca", "Asambleas Autónomicas", "una asamblea autonómica"],
+        [ "ca", "Gobiernos Autonómicos", "un gobierno autonómico"],
+        [ "asamblea_ca", "Asambleas Autonómicas", "una asamblea autonómica"],
         [ "delegacion_gobierno", "Delegaciones del Gobierno", "una delegación del gobierno"],
     "Administración Local",
         [ "ayuntamiento", "Ayuntamientos", "un ayuntamiento"]
