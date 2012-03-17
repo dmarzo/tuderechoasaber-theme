@@ -124,7 +124,8 @@
         return Math.round((to-from)/86400000);
     }
 
-    daysLeft = 100-daysFrom('2011-12-19');
+    // Dec 19: Congress meets ; Dec 21: first day as president. Add one to count today
+    daysLeft = 100-daysFrom('2011-12-21') + 1;
     document.getElementById("days-left").innerHTML = daysLeft;
     document.getElementById("digit-1").innerHTML = '0';
     document.getElementById("digit-2").innerHTML = (daysLeft - (daysLeft % 10)) / 10;
