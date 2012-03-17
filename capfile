@@ -1,0 +1,40 @@
+set :deploy_to, "/home/tdas/alaveteli"
+
+role :app, "tdas@tdas"
+
+desc "Touch restart.txt to reload app"
+task :reload do
+  run "touch #{File.join(deploy_to,'tmp','restart.txt')}"
+end
+
+desc "Update locales from Transifex"
+namespace :update_tx do
+  
+  task :default do
+    es
+    ca
+    gl
+    eu
+    reload
+  end
+  
+  desc "Update Spanish locale"
+  task :es do
+    run "cd #{deploy_to} && tx pull -l es -f"
+  end
+
+  desc "Update Catalan locale"
+  task :ca do
+    run "cd #{deploy_to} && tx pull -l ca -f"
+  end
+
+  desc "Update Basque locale"
+  task :eu do
+    run "cd #{deploy_to} && tx pull -l eu -f"
+  end
+
+  desc "Update Galician locale"
+  task :gl do
+    run "cd #{deploy_to} && tx pull -l gl -f"
+  end
+end
