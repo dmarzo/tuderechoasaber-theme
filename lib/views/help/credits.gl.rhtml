@@ -1,0 +1,34 @@
+<% @title = "Agradecementos" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+    <h1>Agradecementos</h1>
+    <p>
+        No podríamos haber hecho esta web sin el apoyo de mucha gente. Gracias:
+        <ul>
+            <li>Ó equipo de <a href="http://www.access-info.org/">Access Info Europe</a>: Helen Darbishire, Pam Bartlett, Lydia Medland, Victoria Anderica, Alicia Costas, Álvaro Rodríguez, Andreas Pavlou Anne Vandelle e Beth Hillier.</li>
+            
+            <li>Ó equipo da <a href="http://www.civio.es">Fundación Ciudadana Civio</a>: David Cabo, Mar Cabra, Jacobo Elosua, Helena Viladàs e Javier de la Vega.</li>
+            
+            <li>A tódolos voluntarios que fixeron posible esta páxina. Grazas polas traducións, os contactos e sobre todo polo interese amosado e o apoio constante.</li>
+            
+            <li>A Olga por el <a href="https://vimeo.com/25811353">vídeo que grabamos en Sol</a>, y a toda la gente que pasó por el grupo de Ley de Transparencia Ya para difundirlo.</li>
+
+            <li>A Diego Berjón polos deseños e pola paciencia.</li>
+            
+            <li>A Rafa por editar el vídeo de tuderechoasaber.es, y a Guy por la narración.</li>
+
+            <li>A <a href="http://www.goteo.org">Goteo</a> por crer neste proxecto dende o principio.</li>
+            
+            <li>Ós <%= link_to "patrocinadores e entidades colaboradoras", help_about_path(:anchor => 'supporters') %> por crer e facer posible que iniciativas como estas se fagan realidade.</li>
+            
+            <li>A <a href="http://www.utopicus.es/">Utopic_us</a> por dejarnos el espacio para la presentación.</li>
+            
+            <li>A <a href="http://www.iurismatica.com/">Jorge Campanillas y Iurismática</a> por el asesoramiento legal.</li>            
+        </ul>
+        Y a todos <a href="http://www.goteo.org/project/tuderechoasaber.es">los donantes de Goteo</a>:
+        <%= render :partial => 'help/goteo_donors' %>
+        <p>(Se falta o teu nombre, ou se queres cambia-lo por algún motivo, por favor ponte en contacto connosco.)</p>
+    </p>
+</div>

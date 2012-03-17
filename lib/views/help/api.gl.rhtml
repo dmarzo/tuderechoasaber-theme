@@ -1,0 +1,55 @@
+<% @title = "API para programadores" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+  <h1><%=@title %></h1>
+
+    <h2>Introdución</h2>
+      <p>tuderechoasaber.es cre nos principios de Open Data e promóveos. Por iso o software que utilizamos e tódolos datos que recollemos están dispoñibles para os programadores que queiran utilizalos en outros sitios web.</p> 
+      <p>tuderechoasaber.es aínda non ten un API completo, pero gradualmente iremos engadindo grande cantidade de cousas que aseméllanse no uso a un API, tal e como requiren os programadores.</p>
+
+    <h2>Enlaces a novas solicitudes</h2>
+      <p>Se queres animar os teus usuarios a entrar en contacto cunha autoridade pública específica, utiliza URLs da forma:</p>
+      <blockquote>
+      <%= link_to new_request_to_body_url(:url_name => "ministerio_de_sanidad") , new_request_to_body_url(:url_name => "ministerio_de_sanidad") %>
+      </blockquote>
+      <p>Estes son os parámetros que podes engadir ás URLs, ben na URL en sí ou ben dende un formulario:</p>
+
+      <ul>
+          <li> <strong>title</strong> - título predefinido da nova solicitude.</li>
+          <li> <strong>default_letter</strong> - texto predefinido do corpo da carta. A fórmula de encabezamento (Querido...) e a despedida (Un saúdo...) engadiranse ó comenzo e ó final.</li>
+          <li> <strong>body</strong> - en alternativa a <tt>default_letter</tt> isto pon como predefinido o texto enteiro da solicitude, deixando a posibilidade de personalizar o saúdo e a despedida.</li>
+          <li> <strong>tags</strong> - lista de etiquetas separadas con espazos, para que poidas buscar e enlazar posteriormente ás solicitudes realizadas. Por exemplo, <tt>openlylocal spending_id:12345</tt>. Os dous puntos (:) indican que a etiqueta contén un valor ('machine tag'), que pode incluír puntos.</li>
+      </ul>
+
+    <h2>Feeds RSS (en realidade, Atom)</h2>
+      <p>A maioría das páxinas que inclúen solicitudes de acceso á información teñen feeds Atom que podes utilizar para obter actualizacións e enlaces en formato XML. Podes encontrar o URL do feed Atom cunha das seguintes opcións:
+      <ul>
+          <li>Busca o símbolo <img src="/images/feed-16.png" alt=""/>.</li>
+          <li>Examina a declaración <tt>&lt;link rel="alternate" type="application/atom+xml"&gt;</tt> na cabeceira do código HTML.</li>
+          <li>Engade <tt>/feed</tt> ó final da URL.</li>
+      </ul>
+      </p>
+
+      <p> As búsquedas avanzadas tamén soportan feeds en formato Atom. Podes facer todo tipo de cousas con este formato, como consultas por autoridade, por tipo de arquivo, por data ou por estado. Para máis detalles, consulta os <%= link_to 'consellos da búsqueda avanzada', advanced_search_path %>.</p>
+
+    <h2>Datos estructurados en JSON</h2>
+      <p>Moitas páxinas teñen unha versión JSON que permite descargar información sobre os obxetos de forma estructurada. Para atopalos:
+      <ul>
+          <li>Engade <tt>.json</tt> ó final da URL.</li>
+          <li>Busca a declaración <tt>&lt;link rel="alternate" type="application/json"&gt;</tt> na cabeceira do código HTML.</li>
+      </ul>
+      </p>
+
+      <p>Solicitudes, usuarios e autoridades, todos teñen unha versión JSON con información básica sobre eles. Cada formato Atom ten un equivalente JSON con información sobre os obxetos incluídos no feed.</p>
+    
+    <h2>Información sobre todos los organismos públicos de España</h2>
+      <p>Se queres obter información sobre tódalas institucións públicas que temos rexistradas en tuderechoasaber.es podes descargarte un ficheiro CSV que temos dispoñible aquí: <%= link_to "all-authorities.csv", all_public_bodies_csv_url() %>
+      </p>
+
+  <p>Se precisas máis funcionalidades no API que aínda non estean dispoñibles, por favor <a href="/help/contact">contacta connosco</a>. É un traballo en proceso, polo que engadiremos funcionalidades a medida que a xente nolo pida.</p>
+
+  <div id="hash_link_padding"></div>
+</div>
+

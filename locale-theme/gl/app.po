@@ -1,0 +1,52 @@
+# Your theme's locale files will override the core locale files.  This
+# is a good place to put both translations specific to your theme, and
+# "translations" of the core English words (e.g. you might want to
+# call FOI "RTI" throughougout, like this:
+
+msgid "Quiénes somos"
+msgstr "Quienes somos"
+
+msgid "Guía para solicitantes"
+msgstr "Guía para solictantes"
+
+msgid "Solicitar documentos"
+msgstr "Solicitar documentos"
+
+msgid "Buscar solicitudes"
+msgstr "Buscar solicitudes"
+
+msgid "Ejerce tu derecho a saber."
+msgstr "Ejerce tu derecho a saber."
+
+msgid "Para obtener información de instituciones públicas:"
+msgstr "Para obtener información de instituciones públicas:"
+
+msgid "Piensa una pregunta para un organismo público."
+msgstr "Piensa una pregunta para un organismo público."
+
+msgid "Preguntar »"
+msgstr "Preguntar »"
+
+msgid "Nosotros enviamos la pregunta por ti."
+msgstr "Nosotros enviamos la pregunta por ti."
+
+msgid "Te avisamos cuando haya una respuesta."
+msgstr "Te avisamos cuando haya una respuesta."
+
+msgid "¿Contestarán? »"
+msgstr "¿Contestarán? »"
+
+msgid "Cuenta atrás por la transparencia en España"
+msgstr "Cuenta atrás por la transparencia en España"
+
+msgid "Quedan <span id='days-left'></span> días para que el PP cumpla su promesa de presentar una ley de acceso a la información"
+msgstr "Quedan <span id='days-left'></span> días para que el PP cumpla su promesa de presentar una ley de acceso a la información"
+
+msgid "Haz una búsqueda entre las peticiones ya realizadas:"
+msgstr "Haz una búsqueda entre las peticiones ya realizadas:"
+
+msgid "Novedades"
+msgstr "Novedades"
+
+msgid "Peticiones destacadas"
+msgstr "Peticiones destacadas"
