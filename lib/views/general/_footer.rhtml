@@ -1,22 +1,51 @@
 <div id="footer">
     <div id="footer-inner">
-        <a id="access-info-logo" href="http://www.access-info.org/">
-            <img src="/tuderechoasaber-theme/images/access_info_logo.gif" alt="Access Info logo">
-        </a>
-        <a id="civio-logo" href="http://www.civio.es/">
-            <img src="/tuderechoasaber-theme/images/civio_logo.png" alt="Civio logo">
-        </a>
-
-        <div id="credits">
-            <p><%= _("This website is powered by <a href='http://www.alaveteli.org/'>Alaveteli</a>. Other original content was developed by Access Info Europe and Civio and is made public under a <a  href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution, Share Alike licence</a>.") %></p>
+        <div class="footer-column">
+            <h4>Un proyecto de</h4>
+            <p>
+                <a class="footer-logo" href="http://www.access-info.org/">
+                    <img src="/tuderechoasaber-theme/images/access_info_logo.gif" alt="Access Info logo">
+                </a>
+                <a class="footer-logo" href="http://www.civio.es/">
+                    <img src="/tuderechoasaber-theme/images/civio_logo.png" alt="Civio logo">
+                </a>
+            </p>
+            <p>con la colaboración de<br/>
+                <a class="footer-logo" href="http://www.goteo.org/">
+                    <img src="/tuderechoasaber-theme/images/sponsors/goteo.png" alt="Goteo logo">
+                </a>
+            </p>
         </div>
-        <a id="creative-commons-logo" href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" alt="Creative Commons icon"></a>
+        
+        <div class="footer-column">
+            <h4>Ayuda</h4>
+                <ul>
+                    <li><%= link_to "Quiénes somos", help_about_path %></li>
+                    <li><%= link_to "¿Cómo puedes colaborar?", help_help_out_path %></li>
+                    <li><%= link_to "Guía para realizar solicitudes", help_requesting_path %></li>
+                    <li><%= link_to "Tu privacidad", help_privacy_path %></li>
+                    <li><%= link_to "Información para funcionarios", help_officers_path %></li>
+                    <li><%= link_to "Basado en Alaveteli", help_alaveteli_path %></li>
+                    <li><%= link_to "API", help_api_path %></li>
+                    <li><%= link_to "Agradecimientos", help_credits_path %></li>
+                </ul>
+            </p>
+        </div>
 
-        <div id="footer-links">
-            <ul>
-                <li><%= link_to _("Help Desk", :site_name => site_name), help_contact_url %></li>
-                <li><%= link_to _("Contacto", :site_name => site_name), help_contact_url %></li>
-            </ul>
+        <div class="footer-column">
+            <h4>tuderechoasaber.es</h4>
+            <p>
+                <ul>
+                    <li><%= link_to "Contacto", help_contact_path %></li>
+                    <li><%= link_to "Prensa", help_contact_path %></li>
+                    <li><%= link_to "Condiciones de uso", help_contact_path %></li>
+                    <li><%= link_to "Política de privacidad", help_contact_path %></li>
+                    <li><%= link_to "Patrocinadores", help_about_path(:anchor => 'supporters') %></li>
+                </ul>
+                <a class="footer-logo" href="http://creativecommons.org/licenses/by-sa/3.0/">
+                Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike
+                </a>
+            </p>
         </div>
 
         <div style="clear:both"></div>

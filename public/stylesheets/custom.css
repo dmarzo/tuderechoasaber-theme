@@ -1,9 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:600,700);
 
-
 /** LAYOUT **/
 body {
-    font-family: Verdana, Helvetica, Arial;
+    font-family: Verdana, Helvetica Neue, Arial;
     font-size: 12px;
     line-height: 1.5;
 }
@@ -124,7 +123,7 @@ div.lang {
 
 /** NAVIGATION BAR **/ 
 #topnav {
-    font-family: Helvetica, Arial;
+    font-family: Helvetica Neue, Arial;
     font-size: 14px;
     font-weight: bold;
     float: right;
@@ -145,7 +144,7 @@ div.lang {
 
 /** MAIN SITE **/
 h1, h1 a {
-    font-family: 'Open Sans', Helvetica, Arial;
+    font-family: 'Open Sans', Helvetica Neue, Arial;
     color: #414141;
     font-size: 28px;
     font-weight: 600;
@@ -154,14 +153,14 @@ h1, h1 a {
 }
 
 h2, h2 a {
-    font-family: 'Open Sans', Helvetica, Arial;
+    font-family: 'Open Sans', Helvetica Neue, Arial;
     color: #F05A29;
     font-size: 18px;
     font-weight: 700;
 }
 
 h3, h3 a {
-    font-family: Helvetica, Arial;
+    font-family: Helvetica Neue, Arial;
     color: #414141;   
     font-size: 14px;
     font-weight: bold;
@@ -238,7 +237,7 @@ h3, h3 a {
     width: 616px;
     height: 280px;
 
-    font-family: 'Open Sans', Helvetica, Arial;
+    font-family: 'Open Sans', Helvetica Neue, Arial;
     line-height: 1.1;
     
     background-color: #ECECEC;
@@ -317,7 +316,7 @@ h3, h3 a {
     border-radius: 5px;
     padding: 34px 12px 0px 12px;
     
-    font-family: 'Open Sans', Helvetica, Arial;
+    font-family: 'Open Sans', Helvetica Neue, Arial;
     color: #ECECEC;
     text-align: center;
     line-height: 1.1;
@@ -366,7 +365,7 @@ h3, h3 a {
     width: 900px;
 }
     #frontpage-search-box h4 {
-      font-family: 'Open Sans', Helvetica, Arial;
+      font-family: 'Open Sans', Helvetica Neue, Arial;
       font-weight: 600;
       font-size: 18px;
       color: #3C3C3B;
@@ -400,7 +399,7 @@ h3, h3 a {
     }
 
 #frontpage-updates h2 {
-    font-family: 'Open Sans', Helvetica, Arial;
+    font-family: 'Open Sans', Helvetica Neue, Arial;
     font-weight: 700;
     font-size: 22px;
     color: #3C3C3B;
@@ -425,7 +424,7 @@ h3, h3 a {
 }
 
 .frontpage-blog-post {
-    font-family: 'Open Sans', Helvetica, Arial;
+    font-family: 'Open Sans', Helvetica Neue, Arial;
     width: 278px;
     line-height: 1.1;
 }
@@ -454,7 +453,7 @@ h3, h3 a {
     line-height: 1.1;
 }
 .frontpage-featured-request {
-    font-family: 'Open Sans', Helvetica, Arial;
+    font-family: 'Open Sans', Helvetica Neue, Arial;
     margin: 0px 12px;
     
     border-bottom: 1px solid #D9D9D9;
@@ -507,7 +506,7 @@ h3, h3 a {
 .request_listing span.head a, 
 .user_listing span.head a, 
 .body_listing span.head a {
-    font-family: 'Open Sans', Helvetica, Arial;
+    font-family: 'Open Sans', Helvetica Neue, Arial;
     font-size: 16px;
     color: #E94E00;
 }
@@ -523,6 +522,7 @@ a,
     .request_listing a:hover, 
     .body_listing a:hover, 
     .user_listing a:hover {
+        color: #E94E00;
         text-decoration: underline !important;
     }
 
@@ -541,7 +541,7 @@ a,
 }
 
 form input[type="submit"], a.link_button_green, a.link_button_green_large {
-    font-family: 'Open Sans', Helvetica, Arial;
+    font-family: 'Open Sans', Helvetica Neue, Arial;
     font-weight: 600;
     background: url("/tuderechoasaber-theme/images/button-gradient.png") repeat scroll 0 0 transparent;
 }
@@ -590,13 +590,13 @@ form input[type="submit"] {
 
 /** REQUEST **/
 p.subtitle {
-    font-family: Verdana, Helvetica, Arial;
+    font-family: Verdana, Helvetica Neue, Arial;
     font-size: 15px;
     color: #444444; /* XXX */
 }
 
 p.public-body-name-prefix {
-    font-family: Verdana, Helvetica, Arial;
+    font-family: Verdana, Helvetica Neue, Arial;
     font-size: 14px;
     margin-top: 0px;
     margin-bottom: -20px;
@@ -608,7 +608,7 @@ p.public-body-name-prefix {
     width: 480px;
     margin-bottom: 10px;
 
-    font-family: Verdana, Helvetica, Arial;
+    font-family: Verdana, Helvetica Neue, Arial;
     font-size: 16px;
     color: #444444; /* XXX */
 }
@@ -688,7 +688,7 @@ span.desc {
 div.correspondence {
     width: 540px;
     background: none repeat scroll 0 0 #ECECEC;
-    font-family: Verdana, Helvetica, Arial;
+    font-family: Verdana, Helvetica Neue, Arial;
     font-size: 12px !important;
 }
 
@@ -727,7 +727,7 @@ div[id|="incoming"] p {
 #request_form label, 
 label.form_label {
     color: #E94E00;
-    font-family: Helvetica,Arial;
+    font-family: Helvetica Neue,Arial;
     font-size: 14px;
     font-weight: bold;
 }
@@ -796,7 +796,7 @@ TODO: Need to add states for
 /** MODAL SIGN-IN **/
 #signin-successful,
 #signin-successful a {
-    font-family: Helvetica, Arial;
+    font-family: Helvetica Neue, Arial;
     color: #E94E00;   
     font-size: 14px;
     font-weight: bold;
@@ -834,10 +834,11 @@ TODO: Need to add states for
 
 /** FOOTER **/
 #footer {
-    height: 90px;
+    height: 240px;
     margin: 0px;
     border-top: 1px solid #C6C6C5;
     background-color: #ECECEC;
+    padding-top: 20px;
 }
 
 #footer-inner {
@@ -846,57 +847,31 @@ TODO: Need to add states for
     position: relative;
 }
 
-#access-info-logo {
-    position: absolute;
-    left: 0px;
-    top: 14px;
-}
-
-#civio-logo {
-    position: absolute;
-    left: 110px;
-    top: 20px;
-}
-
-#footer-links {
-    margin-top: 5px;
-    float: right;
-
-    font-family: 'Open Sans', Helvetica, Arial;
-    font-size: 18px;
-}
-    #footer-links ul {
-        list-style: none outside none;
-    }
-    #footer-links ul li {
-        float: left;
-        margin-right: 25px;
-    }
-    #footer-links ul a {
-        text-decoration: none;
-        color: #E94E00;
-    }
-    #footer-links ul a:hover {
-        text-decoration: underline;
-    }
-    
-#credits {
+.footer-column {
+    width: 280px;
     float: left;
-    margin-top: 0px;
-    margin-left: 280px;
-    width: 310px;
-
-    font-family: Verdana, Helvetica, Arial;
-    font-size: 11px;
+    padding-left: 40px;
     text-align: left;
 }
-    #credits a {
+    .footer-column h4 {
+        margin-bottom: 0px;
+        font-family: 'Open Sans', Helvetica Neue, Arial;
+        font-size: 15px;
+        color: #444;
+    }
+    .footer-column p, .footer-column ul {
+        font-family: Verdana, Helvetica Neue, Arial;
+        padding-left: 0px;
+        font-size: 12px;
+        color: #555;
+        list-style: none;
+    }
+    .footer-column a {
+        color: #555;
         text-decoration: none;
-        color: #E94E00;
     }
 
-#creative-commons-logo {
-    float: left;
-    right: 0px;
-    margin-top: 25px;
+.footer-logo img {
+    display: block-inline;
+    margin: 10px 10px 5px 0px;
 }
