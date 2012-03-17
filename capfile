@@ -1,21 +1,41 @@
 set :deploy_to, "/home/tdas/alaveteli"
+set :app_branch, "master"
+set :theme, "tuderechoasaber-theme"
 
 role :app, "tdas@tdas"
 
-desc "Touch restart.txt to reload app"
-task :reload do
-  run "touch #{File.join(deploy_to,'tmp','restart.txt')}"
+namespace :app do
+  desc "Update app code"
+  task :update_code do
+    run "cd #{deploy_to} && git pull origin #{app_branch}"
+  end
+
+  desc "Update theme"
+  task :update_theme do
+    run "cd #{File.join(deploy_to,'vendor','plugins',theme)} && git pull origin master"
+  end
+
+  desc "Touch restart.txt to reload app"
+  task :reload do
+    run "touch #{File.join(deploy_to,'tmp','restart.txt')}"
+  end
+  
+  desc "Update the whole thing"
+  task :update do
+    update_theme
+    update_code
+    reload
+  end
 end
 
 desc "Update locales from Transifex"
-namespace :update_tx do
-  
+namespace :update_tx do  
   task :default do
     es
     ca
     gl
     eu
-    reload
+    app::reload
   end
   
   desc "Update Spanish locale"
