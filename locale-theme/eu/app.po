@@ -16,7 +16,7 @@ msgid "Buscar solicitudes"
 msgstr "Eskabideak bilatu"
 
 msgid "Ejerce tu derecho a saber."
-msgstr "Jakiteko eskubidea daukazu. Erabil ezazu."
+msgstr "Zeure eskubidea da. Erabili!"
 
 msgid "Para obtener información de instituciones públicas:"
 msgstr "Erakunde publikoetatik informazioa lortzeko:"
