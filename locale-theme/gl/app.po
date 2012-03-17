@@ -7,7 +7,7 @@ msgid "Quiénes somos"
 msgstr "Quienes somos"
 
 msgid "Guía para solicitantes"
-msgstr "Guía para solictantes"
+msgstr "Guía para solicitantes"
 
 msgid "Solicitar documentos"
 msgstr "Solicitar documentos"
