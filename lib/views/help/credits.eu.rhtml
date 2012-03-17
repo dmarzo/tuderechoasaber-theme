@@ -1,0 +1,33 @@
+<% @title = "Eskerronak" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+    <h1>Eskerronak</h1>
+    <p>
+        <ul>
+            <li><a href="http://www.access-info.org/">Access Info Europe</a>-ko taldeari: Helen Darbishire, Pam Bartlett, Lydia Medland, Victoria Anderica, Alicia Costas, Álvaro Rodríguez, Andreas Pavlou Anne Vandelle eta Beth Hillier.</li>
+            
+            <li><a href="http://www.civio.es">Civio Fundazio Hiritarreko</a> taldeari: David Cabo, Mar Cabra, Jacobo Elosua, Helena Viladàs eta Javier de la Vega.</li>
+            
+            <li>Orrialde hau gauzatu duten boluntario guztioi. Eskerrik asko itzulpenengatik, kontaktuengatik eta batez ere erakutsi duzuen interesa eta etengabeko laguntzagatik.</li>
+            
+            <li>A Olga por el <a href="https://vimeo.com/25811353">vídeo que grabamos en Sol</a>, y a toda la gente que pasó por el grupo de Ley de Transparencia Ya para difundirlo.</li>
+
+            <li>Diego Berjóni, diseinuak eta egonarriagatik.</li>
+            
+            <li>A Rafa por editar el vídeo de tuderechoasaber.es, y a Guy por la narración.</li>
+
+            <li>Goteori, proiektu honetan hasieratik sinesteagatik.</li>
+            
+            <li><%= link_to "Babesleei eta erakunde laguntzaileei", help_about_path(:anchor => 'supporters') %>, mota honetako ekimenak errealitatean gauzatu daitezen sinesteagatik.</li>
+            
+            <li>A <a href="http://www.utopicus.es/">Utopic_us</a> por dejarnos el espacio para la presentación.</li>
+            
+            <li>A <a href="http://www.iurismatica.com/">Jorge Campanillas y Iurismática</a> por el asesoramiento legal.</li>            
+        </ul>
+        Y a todos <a href="http://www.goteo.org/project/tuderechoasaber.es">los donantes de Goteo</a>:
+        <%= render :partial => 'help/goteo_donors' %>
+        <p>(zure izena ez badago, edo arrazoiren bat dela kausa aldatu nahi baduzu, mesedez, jar zaitez gurekin kontaktuan.)</p>
+    </p>
+</div>

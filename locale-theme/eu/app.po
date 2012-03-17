@@ -4,49 +4,49 @@
 # call FOI "RTI" throughougout, like this:
 
 msgid "Quiénes somos"
-msgstr "Qui som"
+msgstr "Nor gara"
 
 msgid "Guía para solicitantes"
-msgstr "Guia per a sol·licitants"
+msgstr "Eskabideak egiteko gida"
 
 msgid "Solicitar documentos"
-msgstr "Sol·licitar documents"
+msgstr "Agiriak eskatu"
 
 msgid "Buscar solicitudes"
-msgstr "Buscar sol·licituds"
+msgstr "Eskabideak bilatu"
 
 msgid "Ejerce tu derecho a saber."
-msgstr "Exerceix el teu dret a saber."
+msgstr "Jakiteko eskubidea daukazu. Erabil ezazu."
 
 msgid "Para obtener información de instituciones públicas:"
-msgstr "Per a obtenir informació de les institucions públiques:"
+msgstr "Erakunde publikoetatik informazioa lortzeko:"
 
 msgid "Piensa una pregunta para un organismo público."
-msgstr "Pensa una pregunta per a un organisme públic."
+msgstr "Pentsa ezazu erakunde publiko bati egiteko galdera."
 
 msgid "Preguntar »"
-msgstr "Preguntar »"
+msgstr "Galdetu »"
 
 msgid "Nosotros enviamos la pregunta por ti."
-msgstr "Nosaltres enviem la pregunta per tu."
+msgstr "Geuk bidaliko diogu galdera."
 
 msgid "Te avisamos cuando haya una respuesta."
-msgstr "T'avisem quan hi hagi una resposta."
+msgstr "Erantzuna datorrenean jakinaraziko dizugu."
 
 msgid "¿Contestarán? »"
-msgstr "¿Contestarán? »"
+msgstr "Erantzungo al dute?"
 
 msgid "Cuenta atrás por la transparencia en España"
-msgstr "Compte enrere per la transparència a Espanya."
+msgstr "Espainiako gardentasunerako atzerako kontaketa"
 
 msgid "Quedan <span id='days-left'></span> días para que el PP cumpla su promesa de presentar una ley de acceso a la información"
-msgstr "Queden <span id='days-left'></span> dies perquè el PP compleixi la seva promesa d’aprovar una llei d’accés a la informació."
+msgstr "<span id='days-left'></span> egun falta dira PPk informaziorako sarbidearen legea aurkezteko promesa bete dezan."
 
 msgid "Haz una búsqueda entre las peticiones ya realizadas:"
-msgstr "Fes una recerca entre les peticions ja realitzades"
+msgstr "Bila ezazu jadanik egindako eskaeren artean:"
 
 msgid "Novedades"
-msgstr "Novetats"
+msgstr "Berriak"
 
 msgid "Peticiones destacadas"
-msgstr "Peticions destacades"
+msgstr "Eskaera nabarmenduak"

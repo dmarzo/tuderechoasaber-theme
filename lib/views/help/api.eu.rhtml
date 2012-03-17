@@ -1,0 +1,56 @@
+<% @title = "API programatzaileentzat" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+  <h1><%=@title %></h1>
+
+    <h2>Sarrera</h2>
+      <p>tuderechoasaber.es orrialdeak sinesten du Open Data-ren printzipioetan (printzipioen esteka) eta sustatzen ditu. Horregatik erabiltzen dugun softwarea eta biltzen ditugun datu guztiak beste webgunetan berrerabili nahi izango dituzten programatzaileen esku daude.</p>
+      <p>Tuderechoasaber.es-ek oraindik ez dauka API osoa, baina mailaka gauza ugari gehitzen joango gara, erabilpenean API baten antzekoa izango da, programatzaileek behar duten bezalaxe.
+      </p>
+
+    <h2>Eskabide berrien esteka</h2>
+      <p>Zure erabiltzaileak aginte publiko zehatz batekin harremanetan jar daitezen animatu nahi badituzu, erabil itzazu honela URLak:</p>
+      <blockquote>
+      <%= link_to new_request_to_body_url(:url_name => "ministerio_de_sanidad") , new_request_to_body_url(:url_name => "ministerio_de_sanidad") %>
+      </blockquote>
+      <p>Hauexek dira URLtan gehitu behar dituzu parametroak, bai URLan bertan, bai inprimaki batetik:</p>
+
+      <ul>
+          <li> <strong>title</strong> - Eskabide berriaren izenburu lehenetsia.</li>
+          <li> <strong>default_letter</strong> - gutunaren gorputzeko testu lehenetsia. Buruaren esamoldeak (...agurgarria) eta agurra (Adeitasunez...) hasieran eta amaieran gehituko dira.</li>
+          <li> <strong>body</strong> - <tt>default_letter</tt> jarri beharrean eskabide osoaren testu lehenetsia jartzen da, hasierako eta amaierako agurra pertsonalizatzeko aukera utziz.</li>
+          <li> <strong>tags</strong> - espazio batez banandutako etiketak, egindako eskabideak geroagoan bilatu eta lotzeko aukera izan dezazun. Adibidez, openlylocal spending_id:12345. Bi puntuek (:) hauxe adierazten dute, etiketak ('machine tag') balioa duela, puntuak izan ditzakeela.</li>
+      </ul>
+
+    <h2>Feeds RSS (egiatan, Atom)</h2>
+      <p>Informaziorako sarbidea eskaintzen dituzten orrialde gehienek feeds Atom deritzona dute, hauek erabil daitezke gaurkotzeak eta XML formatuko estekak lortzeko. feed Atom-eko URLa aurkitu ahal duzu honako aukera batekin:
+      <ul>
+          <li>Bila ezazu ikurra. <img src="/images/feed-16.png" alt=""/></li>
+          <li>Aztertu <tt>&lt;link rel="alternate" type="application/atom+xml"&gt;</tt> deklarazioa, HTML kodearen buruan.</li>
+          <li>Gehitu <tt>/feed</tt> URLaren amaieran.</li>
+      </ul>
+      </p>
+
+      <p>Bilaketa aurreratuek ere onartzen dituzte Atom formatuko feedak. Formatu honekin mota askotako gauzak egin ditzakezu, hala nola erakunde, fitxategi mota, data edo egoeraren araberako bilaketak. Xehetasun gehiago nahi izanez gero, begira ezazu <%= link_to 'bilaketa aurreratuaren aholkuetan', advanced_search_path %>.</p>
+
+    <h2>JSON-en egituraturiko datuak</h2>
+      <p>Orrialde askok JSON bertsioa dute, honek objektuei buruzko informazioa modu egituratu batean deskargatzea baimentzen du. Hauek aurkitzeko:
+      <ul>
+          <li>Gehitu <tt>.json</tt> URLaren amaieran.</li>
+          <li>Bila ezazu <tt>&lt;link rel="alternate" type="application/json"&gt;</tt> deklarazioa, HTML kodearen buruan.</li>
+      </ul>
+      </p>
+
+      <p>Eskabideek, erabiltzaileek eta erakundeek, denek dute JSON bertsio bat, haiei buruzko oinarrizko informazioarekin. Atom formatu bakoitzak badu JSON baliokidea, feeden dauden objektuei buruzko informazioarekin.</p>
+    
+    <h2>Información sobre todos los organismos públicos de España</h2>
+      <p>tuderechoasaber.es orrialdean erregistratuta dauzkagun erakunde publiko guztiei buruzko informazioa lortu nahi baduzu, hemen eskuragarri duzun CSV fitxategia deskargatu ahal duzu: <%= link_to "all-authorities.csv", all_public_bodies_csv_url() %></p>
+          
+  <p>APIn oraindik eskurgarri ez dauden funtzionaltasun gehiago behar baldin badituzu, mesedez, <a href="/help/contact">jar zaitez gurekin harremanetan</a>
+  . Lanean ari den prozesua da, beraz jendeak eskatu ahala funtzionaltasunak gehituko ditugu.</p>
+
+  <div id="hash_link_padding"></div>
+</div>
+
