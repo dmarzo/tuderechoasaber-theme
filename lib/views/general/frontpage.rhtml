@@ -121,11 +121,11 @@
         from= from.split(/\-0?/);
         from= new Date(+from[0], from[1]-1, +from[2]);
 
-        return Math.round((to-from)/86400000);
+        return Math.floor((to-from)/86400000);
     }
 
     // Dec 19: Congress meets ; Dec 21: first day as president. Add one to count today
-    daysLeft = 100-daysFrom('2011-12-21') + 1;
+    daysLeft = 100-daysFrom('2011-12-21');
     document.getElementById("days-left").innerHTML = daysLeft;
     document.getElementById("digit-1").innerHTML = '0';
     document.getElementById("digit-2").innerHTML = (daysLeft - (daysLeft % 10)) / 10;
