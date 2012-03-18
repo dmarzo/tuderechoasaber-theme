@@ -838,7 +838,7 @@ TODO: Need to add states for
     margin: 0px;
     border-top: 1px solid #C6C6C5;
     background-color: #ECECEC;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 #footer-inner {
@@ -848,16 +848,23 @@ TODO: Need to add states for
 }
 
 .footer-column {
-    width: 280px;
+    width: 290px;
     float: left;
-    padding-left: 40px;
+    padding-left: 30px;
     text-align: left;
 }
+    .footer-column.wide {
+        width: 450px;
+    }
     .footer-column h4 {
         margin-bottom: 0px;
         font-family: 'Open Sans', Helvetica Neue, Arial;
         font-size: 15px;
         color: #444;
+    }
+    .footer-column h4.shy {
+        color: #555;
+        font-weight: 200;
     }
     .footer-column p, .footer-column ul {
         font-family: Verdana, Helvetica Neue, Arial;
@@ -873,5 +880,5 @@ TODO: Need to add states for
 
 .footer-logo img {
     display: block-inline;
-    margin: 10px 10px 5px 0px;
+    margin: 5px 10px 5px 0px;
 }
