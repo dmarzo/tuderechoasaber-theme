@@ -50,3 +50,67 @@ msgstr "Novetats"
 
 msgid "Peticiones destacadas"
 msgstr "Peticions destacades"
+
+
+# Sidebar
+
+msgid "¿Cómo funciona?"
+msgstr "Com funciona?"
+
+msgid "¿Quién creó tuderechoasaber.es?"
+msgstr "Qui va crear tuderechoasaber.es?"
+
+msgid "Patrocinadores"
+msgstr "Patrocinadors"
+
+msgid "¿Cómo nos puedes ayudar?"
+msgstr "¿Cómo nos puedes ayudar?"
+
+msgid "Solicitar información"
+msgstr "Solicitar información"
+
+msgid "Localizar la institución adecuada"
+msgstr "Localizar la institución adecuada"
+
+msgid "Idiomas"
+msgstr "Idiomas"
+
+msgid "Consejos sobre las solicitudes"
+msgstr "Consejos sobre las solicitudes"
+
+msgid "Respuestas y apelaciones"
+msgstr "Respuestas y apelaciones"
+
+msgid "Moderación de las solicitudes"
+msgstr "Moderación de las solicitudes"
+
+msgid "Tu privacidad"
+msgstr "Tu privacidad"
+
+msgid "Información para instituciones"
+msgstr "Información para funcionarios"
+
+msgid "¿Qué es tuderechoasaber.es?"
+msgstr "¿Qué es tuderechoasaber.es?"
+
+msgid "Proceso de las solicitudes"
+msgstr "Proceso de las solicitudes"
+
+msgid "Privacidad"
+msgstr "Privacidad"
+
+msgid "Basado en Alaveteli"
+msgstr "Basado en Alaveteli"
+
+msgid "API para programadores"
+msgstr "API per a programadors"
+
+msgid "Agradecimientos"
+msgstr "Agraïments"
+
+
+
+
+
+
+

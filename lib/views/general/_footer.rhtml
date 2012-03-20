@@ -4,36 +4,36 @@
             <h4>tuderechoasaber.es</h4>
             <p>
                 <ul>
-                    <li><%= link_to "Contacto", help_contact_path %></li>
-                    <li><%= link_to "Prensa", help_contact_path %></li>
-                    <li><%= link_to "Quiénes somos", help_about_path %></li>
-                    <li><%= link_to "¿Cómo puedes colaborar?", help_help_out_path %></li>
-                    <li><%= link_to "Patrocinadores", help_about_path(:anchor => 'supporters') %></li>
-                    <li><%= link_to "Agradecimientos", help_credits_path %></li>
+                    <li><%= link_to _("Contacto"), help_contact_path %></li>
+                    <li><%= link_to _("Prensa"), help_contact_path %></li>
+                    <li><%= link_to _("Quiénes somos"), help_about_path %></li>
+                    <li><%= link_to _("¿Cómo puedes colaborar?"), help_help_out_path %></li>
+                    <li><%= link_to _("Patrocinadores"), help_about_path(:anchor => 'supporters') %></li>
+                    <li><%= link_to _("Agradecimientos"), help_credits_path %></li>
                     <li>&nbsp;</li>
-                    <li><%= link_to "Condiciones de uso", help_contact_path %></li>
-                    <li><%= link_to "Política de privacidad", help_contact_path %></li>
+                    <li><%= link_to _("Condiciones de uso"), help_contact_path %></li>
+                    <li><%= link_to _("Política de privacidad"), help_contact_path %></li>
                 </ul>
             </p>
         </div>
 
         <div class="footer-column">
-            <h4>Ayuda</h4>
+            <h4><%= _("Ayuda") %></h4>
                 <ul>
-                    <li><%= link_to "Guía para realizar solicitudes", help_requesting_path %></li>
-                    <li><%= link_to "Tu privacidad", help_privacy_path %></li>
-                    <li><%= link_to "Información para instituciones", help_officers_path %></li>
-                    <li><%= link_to "Basado en Alaveteli", help_alaveteli_path %></li>
-                    <li><%= link_to "API", help_api_path %></li>
+                    <li><%= link_to _("Guía para realizar solicitudes"), help_requesting_path %></li>
+                    <li><%= link_to _("Tu privacidad"), help_privacy_path %></li>
+                    <li><%= link_to _("Información para instituciones"), help_officers_path %></li>
+                    <li><%= link_to _("Basado en Alaveteli"), help_alaveteli_path %></li>
+                    <li><%= link_to _("API"), help_api_path %></li>
                 </ul>
                 <a class="footer-logo" href="http://creativecommons.org/licenses/by-sa/3.0/">
-                Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike
+                <%= _("Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike") %>
                 </a>
             </p>
         </div>
 
         <div class="footer-column">
-            <h4>Un proyecto de</h4>
+            <h4><%= _("Un proyecto de") %></h4>
             <p>
                 <a class="footer-logo" href="http://www.access-info.org/">
                     <img src="/tuderechoasaber-theme/images/access_info_logo.gif" alt="Access Info logo">
@@ -42,7 +42,7 @@
                     <img src="/tuderechoasaber-theme/images/civio_logo.png" alt="Civio logo">
                 </a>
             </p>
-            <h4 class="shy">Financiado vía</h4>
+            <h4 class="shy"><%= _("Financiado vía") %></h4>
             <a class="footer-logo" href="http://www.goteo.org/">
                 <img src="/tuderechoasaber-theme/images/sponsors/goteo_wide.png" alt="Goteo logo">
             </a>

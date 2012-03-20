@@ -5,3 +5,18 @@
 
 msgid "Make and browse Freedom of Information (FOI) requests"
 msgstr "Ejerce tu derecho a saber. Solicita información."
+
+
+# Temporary location for items in tuderechoasaber branch
+
+msgid " - Freedom of Information requests"
+msgstr " - Solicitudes de acceso a la información"
+
+msgid " - user profile"
+msgstr " - perfil del usuario"
+
+msgid "Freedom of Information requests made by you"
+msgstr "Solicitudes de información realizadas por ti"
+
+msgid "Freedom of Information requests made by this person"
+msgstr "Solicitudes de información realizadas por este usuario"
