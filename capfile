@@ -1,5 +1,5 @@
 set :deploy_to, "/home/tdas/alaveteli"
-set :app_branch, "master"
+set :app_branch, "tuderechoasaber.es"
 set :theme, "tuderechoasaber-theme"
 
 role :app, "tdas@tdas"
