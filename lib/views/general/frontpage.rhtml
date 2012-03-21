@@ -66,21 +66,28 @@
                 <h2><%= _("Novedades") %></h2>
                 
                 <%
-                  position = 1;
-                  for item in @blog_items[0..3].reverse: 
+                  # XXX: The ugliest hack, for launch day only
+                  leads = [
+                    'Los políticos la han prometido desde 2004, pero España sigue aún sin ley de transparencia.',
+                    'Ya estamos en marcha. Entra con nosotros en el fascinante mundo de pedir información que es tuya.'
+                  ];
+                
+                
+                  position = 0;
+                  for item in @blog_items[0..3]: 
                     position = position + 1; %>
                   <div class="frontpage-blog-post <%= position.even? ? 'right' : 'left' %>">
                     <img src="/tuderechoasaber-theme/images/posts/<%= item['title'].to_s.gsub(/[^A-Za-z]/,'').downcase %>.jpg" width="278"/>
                     <h4>
                       <a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= h item['title'] %></a>
                     </h4>
-                    <p><%= h excerpt(item['description'].to_s, "", 200) %></p>
+                    <p><%= h excerpt(leads[position-1], "", 200) %></p>
                     <p><a href="<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>"><%= _("Leer más »") %></a></p>
                   </div>
                 <% end %>
 
                 <div style="clear:both"></div>
-                <div class="link-arrow"><a href="<%= blog_url %>"><%= _("Más novedades »") %></a></div>
+                <!-- <div class="link-arrow"><a href="<%= blog_url %>"><%= _("Más novedades »") %></a></div> -->
             </div>
             
             <div id="frontpage-updates-requests">
