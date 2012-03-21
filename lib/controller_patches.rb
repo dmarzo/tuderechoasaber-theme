@@ -16,6 +16,8 @@ Dispatcher.to_prepare do
                 @blog_items = []
                 @twitter_user = MySociety::Config.get('TWITTER_USERNAME', '')
             end
+            
+            @featured_requests = [InfoRequest.find(1), InfoRequest.find(1), InfoRequest.find(1)]
         end
     end
 

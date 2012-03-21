@@ -82,26 +82,14 @@
             
             <div id="frontpage-updates-requests">
                 <h2><%= _("Peticiones destacadas") %></h2>
-                
-                <div class="frontpage-featured-request">
-                    <h4><a href="#">Duis autem vel eum iriure dolor in hendret in velit esse molese consequat...</a></h4>
-                    <div class="frontpage-request-tracker">
-                        <div class="counter">24</div>
-                        <div class="counter-label">Personas siguiendo esta petición</div>
-                        <div class="track-button">También quiero saber</div>
-                        <div style="clear:both"></div>
-                    </div>
-                </div>
-                                
-                <div class="frontpage-featured-request last">
-                    <h4><a href="#">Duis autem vel eum iriure dolor in hendret in velit esse molese consequat...</a></h4>
-                    <div class="frontpage-request-tracker">
-                        <div class="counter">24</div>
-                        <div class="counter-label">Personas siguiendo esta petición</div>
-                        <div class="track-button">También quiero saber</div>
-                        <div style="clear:both"></div>
-                    </div>
-                </div>
+                <% @featured_requests.each do |featured_request| %>
+                <%= render :partial => 'track/tracking_request_links', 
+                      :locals => { 
+                        :track_thing => TrackThing.create_track_for_request(featured_request),
+                        :own_request => featured_request.user == @user,
+                        :location => "frontpage"
+                      } %>
+                <% end %>
             </div>
 
             <div style="clear:both"></div>
