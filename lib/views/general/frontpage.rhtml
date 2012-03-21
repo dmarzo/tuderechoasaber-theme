@@ -70,12 +70,12 @@
                   for item in @blog_items[0..3].reverse: 
                     position = position + 1; %>
                   <div class="frontpage-blog-post <%= position.even? ? 'right' : 'left' %>">
-                    <img src="/tuderechoasaber-theme/images/loremipsum.png" width="278"/>
+                    <img src="/tuderechoasaber-theme/images/posts/<%= item['title'].to_s.gsub(/[^A-Za-z]/,'').downcase %>.jpg" width="278"/>
                     <h4>
                       <a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= h item['title'] %></a>
                     </h4>
                     <p><%= h excerpt(item['description'].to_s, "", 200) %></p>
-                    <p><a href="#"><%= _("Leer más »") %></a></p>
+                    <p><a href="<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>"><%= _("Leer más »") %></a></p>
                   </div>
                 <% end %>
 
