@@ -85,7 +85,7 @@ msgid "Moderación de las solicitudes"
 msgstr "Moderación de las solicitudes"
 
 msgid "Tu privacidad"
-msgstr "Tu privacidad"
+msgstr "La teva privacitat"
 
 msgid "Información para instituciones"
 msgstr "Información para funcionarios"
@@ -97,10 +97,10 @@ msgid "Proceso de las solicitudes"
 msgstr "Proceso de las solicitudes"
 
 msgid "Privacidad"
-msgstr "Privacidad"
+msgstr "Privacitat"
 
 msgid "Basado en Alaveteli"
-msgstr "Basado en Alaveteli"
+msgstr "Basat en Alaveteli"
 
 msgid "API para programadores"
 msgstr "API per a programadors"

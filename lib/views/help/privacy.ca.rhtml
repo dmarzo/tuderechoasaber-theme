@@ -1,0 +1,51 @@
+<% @title = "La teva privacitat" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+    <h1>La teva privacitat</h1>
+    <p>El públic general només pot veure el teu nom a tuderechoasaber.es, llevat que proporcions altra informació de caràcter confidencial a la institució a la qual fas la sol·licitud.</p>
+    <p>Et recomanem encaridament que no donis cap dada personal a la institució a la qual sol·licites informació -per exemple, el número de telèfon, domicili, adreça de correu electrònic o altra informació de caràcter personal, familiar o laboral. No necessites revelar aquestes dades per exercir el teu dret a la informació.</p>
+    <p>En el cas que un funcionari necessiti parlar amb tu per telèfon per aclarir la sol·licitud, et recomanem que li enviïs el teu número directament, no a través d'aquesta pàgina web.</p>
+    
+    <h2 id="email_address">Qui pot veure la meva direcció de correu electrònic?</h2>
+    <p><strong>La teva adreça de correu electrònic NO serà revelada:</strong></p>
+    <ul>
+        <li>A tuderechoasaber.es, llevat que la incloguis en la sol·licitud.</li> 
+        <li>A tercers, tret que estiguem obligats per llei o que ens ho demanis específicament. Els servidors de tuderechoasaber.es es localitzen a España, on s'aplica la legislació de la Unió Europea relativa a la privacitat i a la protecció de dades.</li>
+        <li>A la institució a la qual fas la sol·licitud. Ells només veuran una adreça d'e-mail @tuderechoasaber.es, generada per ordinador específicament per a cada sol·licitud.</li>
+    </ul>
+    <p><strong>La teva adreça de correu electrònic SÍ serà revelada</strong> si envies un missatge a un altre usuari de tuderechoasaber.es. Per això t'ho recordarem abans que enviïs el missatge. </p>
+    
+    <h2>Fareu servir la meva adreça de correu electrònic en butlletins o la vendreu a tercers?</h2>
+    <p>No! Mai no proporcionarem o vendrem la teva adreça de correu electrònic a ningú, llevat que estiguem obligats per llei o que tu així ens ho demanis.</p>
+    <p>Si t'inscrius a tuderechoasaber.es, t'enviarem exclusivament correus electrònics relacionats amb la teva sol·licitud i amb altres assumptes als que tu ens hagis autoritzat específicament, com l'enviament de les alertes sobre les teves consultes o altres consultes a les que hagis donat suport.</p>
+
+    <h2 id="public_request">Per què apareixen el meu nom i la meva sol.licitud publicats a tuderechoasaber.es?</h2>
+    <p>Publiquem la teva sol·licitud a internet perquè tothom pugui consultar i utilitzar la informació que has obtingut. No acostumem a eliminar les sol·licituds (<a href="#delete">més detalls</a>).</p>
+    <p>El teu nom es publica perquè forma part de la sol·licitud. És normal que això sigui així, ja que també es farà públic el nom del funcionari que la respon.</p>
+    <p>En utilitzar el teu veritable nom estàs contribuint a que la gent et contacti per recolzar-te en la teva investigació o fer campanya amb tu.</p>
+    
+    <h2 id="real_name">Puc sol·licitar informació utilitzant un pseudònim?</h2>
+    <p>T’aconsellem que utilitzis el teu nom vertader quan sol·licitis accés a la informació. Estàs exercint un dret que constitueix la base d’una societatd oberta i democràtica. Per això utilitzar el teu nom vertader no hauria de ser un problema. De fet, així contribueixes positivament a aconseguir una comunicació amb l’administració millor i més propera.</p>
+    <p>Si consideres que el teu nom és molt conegut, pots demanar-li a un amic o company que facii la sol·licitud per tu. Si no saps cóm procedir, contacta amb nosaltres i intentarem ajudar-te a realitzar la sol·licitud. De totes formes, has d’entendre que no disposem dels recursos suficients per fer això amb tothom.</p>
+    <p>Et demanarem un nom i un cognom. Si detectem noms ridículs o pseudònims massa controvertits, eliminarem la sol·licitud i ens posarem en contacte amb tu per buscar una sol·lució.</p>
+    <p>Et demanem que no et facis passar per una altra persona.</p>
+    
+    <h2 id="delete">Podeu eliminar la meva sol·licitud o modificar el meu nom?</h2>
+    <p>tuderechoasaber.es és un arxiu públic permanent d’accés a sol·licituds d’informació realitzades a institucions espanyoles. Encara que la resposta a la teva consulta ja no et sembli d’utilitat, pot resultar d’interès a altres persones. Per aquest motiu no eliminem les sol·licituds, excepte en circumstàncies excepcionals (link al siguiente punto) relacionades amb informació confidencial.</p> 
+    
+    <h2 id="takedown">Podeu eliminem informació privada relativa a la meva persona?</h2>
+    <p>Tuderechoasaber.es no publica activament dades personals o confidencials. De totes maneres, revisem freqüentment les peticions per si es publiquen de forma accidental i les eliminem.</p>
+    <p>Si veus a la pàgina alguna informació de caràcter confidencial relacionada amb tu que t’agradaria que treiéssim, fes-nos-ho saber. Especifica exactament de quina informació es tracta i on apareix. Encara que la informació personal o confidencial no sigui teva, si detectes que hi ha un error et preguem que ens ho facis saber per poder esmenar-lo.</p>
+    <p>Pensem que existeix un gran interès públic en retenir els noms dels funcionaris o treballadors públics. Només eliminarem aquests noms en circumstàncies excepcionals, per exemple si revelar el nom i el lloc de treball pot comportar un risc per a la seguretat de la persona. Si ets funcionari i vols que eliminem el teu nom amb urgència per les raons mencionades, hauràs <%= link_to 'd’enviar-nos una sol·licitud', help_contact_path %> a través del responsable del teu departament o organisme. La sol·licitud ha de demostar que constitueix un risc que va més enllà de l’interès públic, i ha de demostrar que s’han pres mesures per ocultar el nom a la pàgina web de l’organització i altres documents que puguin ser públics.</p>
+    <p>Amb la resta de les sol·licituds portem a terme una prova d’interès públic per decidir si la informació hauria d’eliminar-se d’acord amb les normes de Protecció de Dades espanyoles. Considerem que la informació que publiquem és d’interès general i pertany a tothom.</p>
+     
+    <h2>Una institució m’ha demanat el meu número de telèfon i la meva adreça!</h2>
+    <p>Si una institució et demana el teu <strong>número de telèfon</strong> per comentar o aclarir la teva sol·licitud, et recomenem que els el donis directament, no a través d’aquesta web. Si no desitges proporcionar el teu número, pots continuar la teva consulta a través de l’e-mail o els pots demanar el número i concertar una hora per trucar i aclarir la teva petició.</p>
+    <p>Si una autoritat pública et demana la teva <strong>adreça postal</strong> i prefereixes rebre la informació per e-mail, contesta’ls dient que preferiries rebre informació a través del correu electrònic, sempre que la informació existeixi en aquest format.</p>
+    
+    <h2>¡No, necessiten una direcció postal per enviar la meva resposta!</h2>
+    <p>Si una institució només disposa d’una còpia en paper de la informació que desitges, poden demanar-te la teva adreça postal. Tanmateix, pots intentar que t’enviïn els documents escanejats. Si no ho aconsegueixes i decideixes donar-los la teva adreça de manera privada per tal de rebre els documents, especifica en la teva sol·licitud que vols rebre la informació per correu postal.</p>
+    <p><%= link_to 'Avisa’ns', help_contact_path %> quan obtinguis la informació y llavors podràs pujar-la al web. Si escaneges el document, et donarem una adreça electrònica que podràs utilitzar amb aquest propòsit.</p>
+</div>

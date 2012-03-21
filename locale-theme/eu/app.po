@@ -85,7 +85,7 @@ msgid "Moderación de las solicitudes"
 msgstr "Moderación de las solicitudes"
 
 msgid "Tu privacidad"
-msgstr "Tu privacidad"
+msgstr "Zure pribatutasuna"
 
 msgid "Información para instituciones"
 msgstr "Información para instituciones"
@@ -97,7 +97,7 @@ msgid "Proceso de las solicitudes"
 msgstr "Proceso de las solicitudes"
 
 msgid "Privacidad"
-msgstr "Privacidad"
+msgstr "Pribatutasuna"
 
 msgid "Basado en Alaveteli"
 msgstr "Alaveteli-n oinarrituta"
