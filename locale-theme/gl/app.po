@@ -4,7 +4,7 @@
 # call FOI "RTI" throughougout, like this:
 
 msgid "Quiénes somos"
-msgstr "Quienes somos"
+msgstr "Quen Somos"
 
 msgid "Guía para solicitantes"
 msgstr "Guía para solicitantes"
@@ -85,19 +85,19 @@ msgid "Moderación de las solicitudes"
 msgstr "Moderación de las solicitudes"
 
 msgid "Tu privacidad"
-msgstr "Tu privacidad"
+msgstr "A túa privacidade"
 
 msgid "Información para instituciones"
 msgstr "Información para instituciones"
 
 msgid "¿Qué es tuderechoasaber.es?"
-msgstr "¿Qué es tuderechoasaber.es?"
+msgstr "Qué é tuderechoasaber.es?"
 
 msgid "Proceso de las solicitudes"
-msgstr "Proceso de las solicitudes"
+msgstr "Proceso das solicitudes"
 
 msgid "Privacidad"
-msgstr "Privacidad"
+msgstr "Privacidade"
 
 msgid "Basado en Alaveteli"
 msgstr "Baseado en Alaveteli"

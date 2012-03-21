@@ -1,0 +1,58 @@
+<% @title = "Información para instituciones" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+    <h1>Información para instituciones</h1>
+
+    <h3><a href="#what">Qué é tuderechoasaber.es?</a></h3>
+    <h3><a href="#processing_requests">Proceso de las solicitudes</a></h3>
+    <h3><a href="#privacy_issues">Privacidad</a></h3>
+
+    <h1 id="what">Qué é tuderechoasaber.es?</h1>
+    
+    <h2>Veño de chegar a este enlace a través dunha solicitude de información. De que se trata?</h2>
+    <p>Tuderechoasaber.es é unha páxina web xestionada pola ONG de dereitos humáns <a href="http://www.access-info.org">Access Info Europe</a> e pola <a href="http://www.civio.es">Fundación Ciudadana Civio</a>. Axuda ós cidadáns a pedir información a institucións públicas españolas dun xeito centralizado e a comparti-las respostas co resto dos cidadáns.</p>
+    <p>A solicitude que recibiu enviouse a través de tuderechoasaber.es. Só terá que responder á solicitude do mesmo xeito que unha solicitude de información corrente. A única diferencia é que a resposta se publicará automáticamente na páxina web de tuderechoasaber.es</p> 
+    <p>Se ten dúbidas sobre a privacidade ou calquera outro asunto, por favor siga lendo xa que quizais se resolverán máis adiante.</p> 
+    <p>É posible que estea interesado en le-la sección <%= link_to 'Quen Somos', help_about_path %> para coñecer con máis detalle en que consiste este proxecto, o equipo e a que nos adicamos.</p>
+    <p>Tamén pode navegar pola páxina para ver que outras solicitudes se realizaron á súa institución e comprobar cal é o estado de resposta.</p>
+    <p>Nos encantará recibir sus comentarios, ideas o sugerencias sobre esta web. Por favor, <%= link_to 'contacte con nosotros', help_contact_path %>.</p>
+    
+    <h2>Por que se publican as respostas ás solicitudes de información?</h2>
+    <p>Coidamos que achega beneficios. Principalmente afoutará ós cidadáns a estar máis interesados e comprometidos coas actividades das institucións públicas.</p> 
+    <p>Tamén esperamos que, deste xeito, se reduza o número de solicitudes de información duplicadas que poden recibir organismos coma o seu.</p> 
+    <p>A información que se vai solicitar é información pública polo que a súa posterior publicación non supón ningún problema, antes ben: coma mencionabamos, é un xeito eficente de que esta non volva a solicitarse.</p>
+    
+    <h2>As persoas que realizan solicitudes son reais?</h2>
+    <p>Por suposto. Antes de poder enviar unha solicitude, tódolos usuarios deben rexistrarse na páxina web aportando un e-mail que verificamos.</p>
+    <p>Para que o sistema funcione de xeito automático, utilizamos enderezos de correo electrónico xerados por ordenador para cada unha das solicitudes. É por iso que o enderezo de contacto que a vostede lle aparece pon “@tuderechoasaber.es”.</p>
+    
+    <h2>tuderechoasaber.es está enviando solicitudes de máis!</h2>
+    <p>tuderechoasaber.es non realiza ningunha solicitude. Enviámo-las en nome dos usuarios, que son persoas reais que solicitan información acerca dos temas nos que están interesados. Se está recebendo moitas peticións, é un sinal de que hai interese na súa institución ou nas súas actividades</p>
+
+    <h1 id="processing_requests">Proceso das solicitudes</h1>
+    
+    <h2 id="spam_problems">Estou a ver en tuderechoasaber.es que se realizou unha petición á miña institución, pero nós non recibimos email ningún!</h2>
+    <p>Se unha petición aparece en tuderechoasaber.es é que tentamos de envia-la ó órgano pertinente vía e-mail. Calquera mensaxe de erro na recepción aparecerá automáticamente na web.</p>
+    <p>Pode comproba-lo enderezo de contacto á que estamos a enviar as peticións usando o link “Ver enderezo de e-mail” que aparece na páxina de cada institución. Por favor, se ten un enderezo mellor que poidamos usar, agradeceriamos que se puxera en <%= link_to 'en contacto', help_contact_path %> con nós.</p>
+    <p>Ás veces, as peticións son bloqueadas polos “filtros de spam”. Para asegurarse de que isto non ocorra, pida ó seu departamento de informática que engada calquera e-mail de @tuderechoasaber.es á lista de remitentes autorizados.</p>
+    <p>Se <a href="mailto:contacto@tuderechoasaber.es">nolo solicita</a>, podemos reenvia-lo correo da solicitude realizada á súa institución e/ou darlle detalles técnicos da entrega, de xeito que o seu departamento de informática poida identificar o que lle ocurreu coa mensaxe.</p>
+    
+    <h2 id="days">Como calculan a data límite que aparece na páxina de peticións?</h2>
+    <p>Calculamos tres meses dende o envío da solicitude, tal e como se establece no artigo 35 da <a href="http://noticias.juridicas.com/base_datos/Admin/l30-1992.t4.html#a37">Lei 30/1992 de Réxime Xurídico das Administracións Públicas e do Procedemento Administrativo Común.</a></p>
+    <p>Se se trata de información medioambiental, calculamos un mes dende o envío da solicitude tal e como establece a <a href="http://www.boe.es/aeboe/consultas/bases_datos/doc.php?id=BOE-A-2006-13010">lei de acceso a información medioambiental</a>.</p>
+    
+    <h2>Como respondo á solicitude?</h2>
+    <p>Simplemente, responda ó e-mail de xeito normal. A solicitude farase chegar ó solicitante e publicarase tamén na páxina web de tuderechoasaber.es.</p>
+    
+    <h2>Como podo enviar un arquivo grande que non pode ir por e-mail?</h2>
+    <p><%= link_to 'Contacte con nós', help_contact_path %> e facilitarémoslle un enderezo web para subi-lo arquivo dende o seu navegador.</p>
+    
+    <h1 id="privacy_issues">Privacidade</h1>
+    <h2>Por que publican os nomes dos funcionarios e o texto dos e-mails?</h2>
+    <p>Consideramos que o traballo dos funcionarios debe ser información pública. Unicamente eliminaremos dita información baixo circunstancias excepcionais. Véxase a nosa <%= link_to 'política para retirar datos', help_privacy_path(:anchor=>'takedown') %>.</p>
+
+    <h2 id="mobiles">Publican os enderezos de e-mail e os números de teléfono móbil?</h2>
+    <p>Para previ-lo spam, tentamos eliminar automaticamente tódolos enderezos de correo e posibles números de télefono móbil das respostas ás peticións. Por favor, contacte con nós por se esquecemos de retirar algún. Por razóns técnicas, non sempre podemos elimina-los dous arquivos adxuntos así coma dalgúns documentos en PDF.</p>
+</div>
