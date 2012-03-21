@@ -199,11 +199,22 @@ h3, h3 a {
     line-height: 1.5;
     text-align: justify;
 }
-    .controller_help a {
+    .controller_help ul {
+        margin-left: 10px;
+    }
+    .controller_help h3 {
         color: #E94E00;
         text-decoration: none;
+        margin-top: 20px !important;
+        font-weight: normal;
+    }
+    .controller_help a, .controller_help a {
+        color: #444444;
+        text-decoration: none;
+        font-weight: normal;
     }
     .controller_help a:hover {
+        color: #444444;
         text-decoration: underline;
     }
 
