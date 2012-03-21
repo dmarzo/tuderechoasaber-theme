@@ -949,18 +949,17 @@ TODO: Need to add states for
 
 
 /** HELP OUT RIBBON (thanks http://unindented.org/articles/2009/10/github-ribbon-using-css-transforms/ )*/
-
 .ribbon {
   background-color: #E94E00;
   overflow: hidden;
   /* top left corner */
   position: absolute;
-  right: -3.8em;
+  left: -4em;
   top: 4em;
   z-index: 100;
   /* 45 deg ccw rotation */
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   /* shadow */
   -moz-box-shadow: 0 0 1em #888;
   -webkit-box-shadow: 0 0 1em #888;
