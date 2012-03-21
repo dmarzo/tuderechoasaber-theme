@@ -67,7 +67,7 @@
                 
                 <%
                   position = 1;
-                  for item in @blog_items[0..3]: 
+                  for item in @blog_items[0..3].reverse: 
                     position = position + 1; %>
                   <div class="frontpage-blog-post <%= position.even? ? 'right' : 'left' %>">
                     <img src="/tuderechoasaber-theme/images/loremipsum.png" width="278"/>
