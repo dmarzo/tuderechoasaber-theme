@@ -55,4 +55,10 @@
     <p>No hauríem pogut fer aquest web sense el recolzament de <%= link_to_unless_current "més de 150 ciutadans", help_credits_path %> que van creure en aquesta plataforma i ens van donar diners mitjançant <a href="http://www.goteo.org/">la plataforma de crowdfunding Goteo</a>. Si t’agrada la nostra iniciativa, <%= link_to "tú també pots fer un donatiu", help_help_out_path %>.</p>
 
     <%= render :partial => 'help/supporters' %>
+
+    <h2 id="public_partners">Instituciones colaboradoras</h2>
+    
+    <%= render :partial => 'help/public_partners' %>
+
+    <p>Estas son las <a href="/tuderechoasaber-theme/docs/colaboracion.pdf">condiciones de colaboración</a></span>.</p>
 </div>
