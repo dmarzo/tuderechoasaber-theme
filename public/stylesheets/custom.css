@@ -548,11 +548,17 @@ h3, h3 a {
         color: #FFFFFF;
     }
 
+.feed_form_frontpage p,
+.feed_form_sidebar p {
+    line-height: 1.5;
+}
+
 .request-tracker-frontpage form.feed_form input[type="submit"],
 .request-tracker-sidebar form.feed_form input[type="submit"] {
     font-family: Verdana, 'Helvetica Neue', Arial;
     font-weight: bold;
     font-size: 12px;
+    padding: 1px 4px;
 }
 
 
