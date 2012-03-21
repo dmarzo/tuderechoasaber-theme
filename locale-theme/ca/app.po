@@ -9,8 +9,8 @@ msgstr "Qui som"
 msgid "Guía para solicitantes"
 msgstr "Guia per a sol·licitants"
 
-msgid "Solicitar documentos"
-msgstr "Sol·licitar documents"
+msgid "Solicitar información"
+msgstr "Sol·licitar información"
 
 msgid "Buscar solicitudes"
 msgstr "Buscar sol·licituds"

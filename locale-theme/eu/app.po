@@ -9,7 +9,7 @@ msgstr "Nor gara"
 msgid "Guía para solicitantes"
 msgstr "Eskabideak egiteko gida"
 
-msgid "Solicitar documentos"
+msgid "Solicitar información"
 msgstr "Agiriak eskatu"
 
 msgid "Buscar solicitudes"
