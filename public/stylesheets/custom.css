@@ -486,7 +486,7 @@ h3, h3 a {
 }
     .request-tracker-frontpage .counter {
       float: left;
-      width: 118px;
+      width: 100px;
       font-weight: 700;
       font-size: 60px;
       color: #3C3C3B;
