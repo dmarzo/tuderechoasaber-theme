@@ -557,16 +557,17 @@ form input[type="submit"] {
 }
 
 #signup .form_item_note, 
+#signup .form_checkbox, 
 #signin .form_note,
 #signin .form_checkbox {
     font-size: 0.9em;
     margin-left: 110px;
-    width: 240px;
+    width: 270px;
 }
 
 #sign_together input[type="text"],
 #sign_together input[type="password"] {
-    width: 220px;
+    width: 240px;
 }
 
 #middle_strip {
@@ -577,6 +578,9 @@ form input[type="submit"] {
     text-align: center;
 }
 
+#change_password p, #change_password div {
+    clear: both;
+}
 
 /** PUBLIC BODIES LISTING **/
 #public_body_index #left_column_flip h2,
