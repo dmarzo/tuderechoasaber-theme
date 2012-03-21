@@ -6,21 +6,40 @@
     <h1>¿Cómo nos puedes ayudar?</h1>
     
     <h2>Aportaciones económicas</h2>
-    <p>
-        <ul>
-            <li>Para ayudarnos a mantener tuderechoasaber.es puedes <span class="XXX">hacer una donación [añadir enlace]</span>.</li>
-            <li>Puedes ser <span class="XXX"><a href="XXX">patrocinador</a></span> de tuderechoasaber.es <span class="XXX">(link a condiciones de patrocinio)</span>.</li>
-        </ul>
+    <p>tuderechoasaber.es ha arrancado gracias al apoyo económico de <a href="http://www.goteo.org/project/tuderechoasaber.es/">más de 150 personas que nos han dado un total de 6.138€</a> a través de la plataforma de crowdfunding Goteo. Pero aún nos queda mucho por hacer y necesitamos tu ayuda.</p>
+    <p>Toda pequeña contribución, incluso de 5€ o 10€, nos ayudará a realizar mejor las tareas de mantenimiento diario. Tu donación servirá para garantizar el buen funcionamiento de la web, ampliar nuestra red de contactos de instituciones y hacer llegar el mensaje de la necesidad de una administración abierta a mucha más gente.</p>
+    <p>Además:
+      <ul>
+        <li>Si donas más de 10 euros te mencionaremos en los agradecimientos. (Somos muy transparentes con nuestra financiación, publicando quién dona y cómo gastamos el dinero. Pero también respetamos tu privacidad. Si prefieres que tu nombre no aparezca, háznoslo saber.)</li>
+        <li>Si donas más de 400 euros aparecerás como <%= link_to _("patrocinador"), help_about_path(:anchor => 'supporters') %> en la web.</li>
+      </ul>
     </p>
+    <p>Puedes hacernos llegar tu donación de las siguientes maneras:
+      <ul>
+        <li><strong>Preferiblemente</strong>, por transferencia bancaria a la siguiente cuenta (gestionada por <a href="http://www.access-info.org/es/nuestra-mision-y-estrategia">Access Info Europe</a>, ONG registrada en España):<br/>
+          <blockquote>
+          Banco: La Caixa, Paseo de la Habana 5, 28036 Madrid<br/>
+          Número de cuenta: 2100 - 2133 - 99 - 0200291748<br/>
+          Por favor, usa la referencia "DON-TDAS"<br/>
+          </blockquote>
+        </li>
+        <li>Si quieres, puedes hacerlo <a href="http://www.access-info.org/apoya-a-access-info-europe">a través de PayPal a Access Info Europe</a>, aunque de este modo se pierde un porcentaje en comisiones por el camino.</li>
+      </ul>
+    </p>
+
     
     <h2>Voluntarios</h2>
     <p>
         <ul>
             <li>Puedes ayudarnos a traducir el contenido de la web y las solicitudes al catalán, al euskera y al gallego.</li>
             <li>Ayúdanos a difundir este proyecto, con un post en tu web o en tu blog, por ejemplo o con Twitter recomendando <a href="http://twitter.com/#!/tuderechoasaber">@tuderechoasaber</a>.</li>
+            <li>Si ves algún problema con la web, avísanos, aún estamos trabajando en ella.</li>
+            <li>Si quieres ayudarnos con el diseño y la programación de la web, o con la administración del servidor, eres más que bienvenido, <a href="mailto:contacto@tuderechoasaber.es">escríbenos a contacto@tuderechoasaber.es</a>.</li>
         </ul>
     </p>
     
     <h2>Instituciones públicas</h2>
-    <p>Si eres una institución pública, puedes ser <span class="XXX"><a href="XXX">entidad colaboradora</a></span>. No puedes darnos dinero pero podemos colaborar para hacer que la web sea mejor y más colaborativa <span class="XXX"><a href="XXX">(link a condiciones de colaboración)</a></span>.</p>
+    <p>Si eres una institución pública, puedes ser entidad colaboradora. No puedes darnos dinero pero podemos colaborar para hacer que la web sea mejor y más colaborativa. Estas son las <a href="/tuderechoasaber-theme/docs/colaboracion.pdf">condiciones de colaboración</a></span>.</p>
+
+    <%= render :partial => 'help/public_partners' %>
 </div>
