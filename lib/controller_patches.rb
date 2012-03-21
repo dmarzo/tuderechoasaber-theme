@@ -17,7 +17,11 @@ Dispatcher.to_prepare do
                 @twitter_user = MySociety::Config.get('TWITTER_USERNAME', '')
             end
             
-            @featured_requests = [InfoRequest.find(1), InfoRequest.find(1), InfoRequest.find(1)]
+            begin
+                @featured_requests = MySociety::Config.get("FRONTPAGE_FEATURED_REQUESTS", []).map{|i| InfoRequest.find(i)}
+            rescue
+                @featured_requests = []
+            end
         end
     end
 
