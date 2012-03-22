@@ -4,11 +4,15 @@
     <%= render :partial => 'track/tracking_request_links', :locals => { :track_thing => @track_thing, :own_request => @info_request.user == @user, :location => 'sidebar' } %>
 
     <h2><%= _("Act on what you've learnt") %></h2>
-
-    <div class="act_link">
-     <% tweet_link = "http://twitter.com/share?url=#{h(request.url)}&via=#{h(MySociety::Config.get('TWITTER_USERNAME', ''))}&text='#{h(@info_request.title)}'&related=#{_('alaveteli_foi:The software that runs {{site_name}}', :site_name => h(site_name))}" %>
+    
+    <div class="act_link">    
+        <% tweet_link = "http://twitter.com/share?url=#{h(request.url)}&via=#{h(MySociety::Config.get('TWITTER_USERNAME', ''))}&text='#{h(@info_request.title)}'&related=#{_('alaveteli_foi:The software that runs {{site_name}}', :site_name => h(site_name))}" %>
         <%= link_to '<img src="/images/twitter-16.png" alt="twitter icon">', tweet_link %> 
         <%= link_to _("Tweet this request"), tweet_link %> 
+    </div>
+
+    <div class="act_link">
+        <iframe src="//www.facebook.com/plugins/like.php?href&amp;send=false&amp;layout=standard&amp;width=200&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:35px;" allowTransparency="true"></iframe>
     </div>
 
     <%= render :partial => 'request/next_actions' %>
