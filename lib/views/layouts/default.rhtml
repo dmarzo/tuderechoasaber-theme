@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="<%= I18n.locale %>">
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>" prefix="og: http://ogp.me/ns#">
     <head>
         <% if @title %>
         <title><%=@title%> - <%= site_name %></title>
@@ -9,7 +9,7 @@
         <meta property="og:title" content="<%= site_name %> - <%= _('Make and browse Freedom of Information (FOI) requests') %>" />
         <% end %>
 
-        <meta property="og:type" content="web" />
+        <meta property="og:type" content="website" />
         <meta property="og:image" content="http://www.tuderechoasaber.es/tuderechoasaber-theme/images/logo.png?1330664009" />
 
         <link rel="shortcut icon" href="/favicon.ico">
