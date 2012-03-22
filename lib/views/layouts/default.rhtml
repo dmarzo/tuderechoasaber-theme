@@ -1,13 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="<%= I18n.locale %>">
     <head>
-        <title>
         <% if @title %>
-            <%=@title%> - <%= site_name %>
+        <title><%=@title%> - <%= site_name %></title>
+        <meta property="og:title" content="<%=@title%> - <%= site_name %>" />
         <% else %>
-            <%= site_name %> - <%= _('Make and browse Freedom of Information (FOI) requests') %>
+        <title><%= site_name %> - <%= _('Make and browse Freedom of Information (FOI) requests') %></title>
+        <meta property="og:title" content="<%= site_name %> - <%= _('Make and browse Freedom of Information (FOI) requests') %>" />
         <% end %>
-        </title>
+
+        <meta property="og:type" content="web" />
+        <meta property="og:image" content="http://www.tuderechoasaber.es/tuderechoasaber-theme/images/logo.png?1330664009" />
 
         <link rel="shortcut icon" href="/favicon.ico">
         <%= stylesheet_link_tag 'main', :title => "Main", :rel => "stylesheet", :media => "all" %>
