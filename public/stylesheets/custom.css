@@ -320,40 +320,28 @@ h3, h3 a {
         float: left;
     }
 
-#frontpage-100-days-counter {
+#frontpage-lead-ad {
     background-color: #E84E00;
-    background: url("/tuderechoasaber-theme/images/frontpage-counter-background.png") no-repeat scroll 0 0 transparent;
     float: left;
     border-radius: 5px;
-    padding: 34px 12px 0px 12px;
+    padding: 0px 12px 0px 12px;
+    margin-bottom: 10px;
     
     font-family: 'Open Sans', 'Helvetica Neue', Arial;
     color: #ECECEC;
     text-align: center;
     line-height: 1.1;
 }
-    #digit-1, #digit-2, #digit-3 {
-        font-size: 85px;
-        font-weight: 700;
-        color: #333333;
-        float: left;
-        position: relative;
-        text-shadow: 1px 1px #ECECEC;
-    }
-    #digit-1 {
-        left: 15px;
-    }
-    #digit-2 {
-        left: 46px;
-    }
-    #digit-3 {
-        left: 77px;
-    }
-    #frontpage-100-days-counter h4 {
+    #frontpage-lead-ad h4 {
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 0px;
-        margin-top: 35px;
+        margin-top: 15px;
+    }
+    #frontpage-lead-ad a {
+        color: #ECECEC;
+        text-decoration: underline !important;
+        font-weight: bold;
     }
 
 #frontpage-content {

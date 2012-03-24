@@ -25,13 +25,15 @@
     </div>
 
     <div id="frontpage-intro-sidebar">
-        <div id="frontpage-100-days-counter">
-            <div id="digit-1" class="digit"></div>
-            <div id="digit-2" class="digit"></div>
-            <div id="digit-3" class="digit"></div>
-            <div style="clear:both"></div>
-            <h4><%= _("Cuenta atrás por la transparencia en España") %></h4>
-            <p><%= _("Quedan <span id='days-left'></span> días para que el PP cumpla su promesa de presentar una ley de acceso a la información") %></p>
+        <div id="frontpage-lead-ad">
+            <h4>Anteproyecto de Ley de Transparencia</h4>
+            <p>El gobierno publicará el próximo lunes 26 <a href="http://www.mpr.es/es/noticia/2743/el-gobierno-presenta-la-ley-de-transparencia.html">el anteproyecto de Ley de Transparencia</a>, y podrás enviar tus comentarios durante 15 días a través del <a href="http://www.mpr.es">Ministerio de la Presidencia</a>.</p>
+        </div>
+
+        <div id="frontpage-lead-ad">
+            <h4>¡Nos vemos el lunes!</h4>
+            <p>Este lunes 26 a las 20:00 horas<br/> estaremos en <a href="http://www.utopicus.es/">Utopic_US</a> (Madrid) presentando tuderechoasaber.es. ¡Os esperamos!.</p>
+            <p>También puedes vernos <a href="https://www.irekia.euskadi.net/es/events/9755">por streaming</a>.</p>
         </div>
 
         <div id="frontpage-share-buttons">
@@ -106,28 +108,5 @@
         </div>
     </div>
 </div>
-
-<script type="text/javascript">
-    // http://stackoverflow.com/questions/3942454/how-to-get-the-duration-of-days-from-today-to-a-specified-date-in-javascript
-    function daysFrom(from){
-        // strings in the form'yyyy-mm-dd' or 'yyyy-m-d'
-        // split the strings on dashes and possible leading 0, 
-        // to avoid '08' becoming octal '10'
-
-        to= new Date();
-
-        from= from.split(/\-0?/);
-        from= new Date(+from[0], from[1]-1, +from[2]);
-
-        return Math.floor((to-from)/86400000);
-    }
-
-    // Dec 19: Congress meets ; Dec 21: first day as president. Add one to count today
-    daysLeft = 100-daysFrom('2011-12-21');
-    document.getElementById("days-left").innerHTML = daysLeft;
-    document.getElementById("digit-1").innerHTML = '0';
-    document.getElementById("digit-2").innerHTML = (daysLeft - (daysLeft % 10)) / 10;
-    document.getElementById("digit-3").innerHTML = daysLeft % 10;
-</script>
 
 <% end %>
