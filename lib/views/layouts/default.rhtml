@@ -19,7 +19,6 @@
         <% if !params[:print_stylesheet].nil? %>
          <%= stylesheet_link_tag 'print', :rel => "stylesheet", :media => "all"  %>
         <% end %>
-        <!-- XXX: removed general.js to avoid Ajax call to determine country -->
         <%= javascript_include_tag 'jquery.js', 'jquery-ui.min','jquery.cookie.js' %>
 
         <% if @profile_photo_javascript %>
@@ -38,12 +37,7 @@
         <!--[if LT IE 8]> 
         <style type="text/css">@import url("/stylesheets/ie7.css");</style> 
         <![endif]-->
-        
-        <!-- XXX: removed old custom.css method -->
-        
-        <% if force_registration_on_new_request %>
-        <%= stylesheet_link_tag 'jquery.fancybox-1.3.4', :rel => "stylesheet"  %>
-        <% end %>
+  
 
         <% if @feed_autodetect %>
             <% for feed in @feed_autodetect %>
@@ -65,27 +59,6 @@
     </head>
     <body <%= "class='front'" if params[:action] == 'frontpage' %>>
 
-    <!-- XXX: move to a separate file -->
-    <% if force_registration_on_new_request && !@user %>
-    <%= javascript_include_tag 'jquery.fancybox-1.3.4.pack' %>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#make-request-link").fancybox({
-                'modal': false,
-                'width': 920,
-                'height': 400,
-                'type': 'iframe',
-                'href': '/<%= I18n.locale %>/profile/sign_in?modal=1',
-                'onClosed': function() {
-                    // modal_signin_successful variable set by modal dialog box
-                    if (typeof modal_signin_successful != 'undefined' ) {
-                        window.location.href = '<%= select_authority_url %>';
-                    }
-                } 
-            });
-        });
-    </script>
-    <% end %>
         
 <% # code for popup advert for a campaign etc.
 =begin
