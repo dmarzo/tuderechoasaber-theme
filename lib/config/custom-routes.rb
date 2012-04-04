@@ -4,6 +4,8 @@ if ENV["RAILS_ENV"] != "test"
         map.with_options :controller => 'help' do |help|
             help.help_help_out '/help/help_out', :action => 'help_out'
             
+            help.help_draft_comments '/help/draft_comments', :action => 'draft_comments'
+
             help.help_press '/help/press', :action => 'press'
             help.help_privacy_policy '/help/privacy_policy', :action => 'privacy_policy'
             help.help_terms_of_use '/help/terms_of_use', :action => 'terms_of_use'
