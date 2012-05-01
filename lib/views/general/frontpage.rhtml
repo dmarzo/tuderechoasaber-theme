@@ -62,40 +62,24 @@
         <div id="frontpage-updates">
             <div id="frontpage-updates-news">
                 <h2><%= _("Novedades") %></h2>
-                
-                <%
-                  # XXX: The ugliest hack, for launch day only
-                  leads = [
-                    'Te animamos a que dones unos euros para que podamos seguir funcionando con éxito.',
-                    'José Luis Ayllón asegura en Brasilia que incorporarán al texto algunas de las aportaciones de la sociedad.',
-                    'Más de 50 naciones presentan en Brasilia sus planes de Gobierno Abierto. Lee lo que presenta nuestro país.',
-                    'Más de 85.000 personas han firmado ya una campaña para exigir una ley más fuerte y exhaustiva.',
-                    'Identificamos innovaciones que permiten la participación de la sociedad en leyes y contenidos periodísticos.',
-                    'Mañana cierra la consulta pública del anteproyecto de ley de transparencia. Aquí tienes sugerencias concretas.',
-                    'El Gobierno publicó el pasado lunes 26 de marzo el borrador del anteproyecto de la Ley de Transparencia, Acceso a la Información Pública y Buen Gobierno.',
-                    'Se pregunta sobre todo a ministerios sobre subvenciones, facturas impagadas o denuncias a los cuerpos de seguridad.',
-                    'El texto del borrador del anteproyecto de ley se podrá consultar desde hoy.',
-                    'Los políticos la han prometido desde 2004, pero España sigue aún sin ley de transparencia.',
-                    'Ya estamos en marcha. Entra con nosotros en el fascinante mundo de pedir información que es tuya.'
-                  ];
-                
-                
-                  position = 0;
-                  for item in @blog_items[0..3]: 
-                    position = position + 1; %>
-                    
-                  <div class="frontpage-blog-post <%= position.even? ? 'right' : 'left' %>" <%= position == 3 ? '' 'style="clear:left"' : '' %> >
-                    <img src="/tuderechoasaber-theme/images/posts/<%= item['title'].to_s.gsub(/[^A-Za-z]/,'').downcase %>.jpg" width="278" height="128"/>
+                <% 0.upto(3).each do |position| 
+                    item = @blog_items[position]; %>
+                  
+                  <div class="frontpage-blog-post <%= position.even? ? 'left' : 'right' %>">
+                    <img src="<%= item['thumbnail'] %>" width="278" height="128"/>
                     <h4>
                       <a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= h item['title'] %></a>
                     </h4>
-                    <p><%= h excerpt(leads[position-1], "", 200) %></p>
+                    <p><%= h excerpt(item['description'].to_s, "", 200) %></p>
                     <p><a href="<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>"><%= _("Leer más »") %></a></p>
                   </div>
+              
+                  <% if position.odd? %>
+                  <div style="clear:both"></div>
+                  <% end %>
                 <% end %>
 
-                <div style="clear:both"></div>
-                <!-- <div class="link-arrow"><a href="<%= blog_url %>"><%= _("Más novedades »") %></a></div> -->
+                <div class="link-arrow"><a href="<%= blog_url %>"><%= _("Más novedades »") %></a></div>
             </div>
             
             <div id="frontpage-updates-requests">
