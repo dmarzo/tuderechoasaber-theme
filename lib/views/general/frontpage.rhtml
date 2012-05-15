@@ -63,7 +63,8 @@
             <div id="frontpage-updates-news">
                 <h2><%= _("Novedades") %></h2>
                 <% 0.upto(3).each do |position| 
-                    item = @blog_items[position]; %>
+                    item = @blog_items[position];
+                    break if item.nil? %>
                   
                   <div class="frontpage-blog-post <%= position.even? ? 'left' : 'right' %>">
                     <img src="<%= item['thumbnail'] %>" width="278" height="128"/>
