@@ -1,7 +1,32 @@
 # Your theme's locale files will override the core locale files.  This
 # is a good place to put both translations specific to your theme, and
-# "translations" of the core English words (e.g. you might want to
-# call FOI "RTI" throughougout, like this:
+# "translations" of the core English words
+
+# Temporary location for items in tuderechoasaber branch
+
+msgid "Make and browse Freedom of Information (FOI) requests"
+msgstr "Ejerce tu derecho a saber. Solicita información."
+
+msgid "Too many requests"
+msgstr "Demasiadas solicitudes"
+
+msgid " - Freedom of Information requests"
+msgstr " - Solicitudes de acceso a la información"
+
+msgid " - user profile"
+msgstr " - perfil del usuario"
+
+msgid "Freedom of Information requests made by you"
+msgstr "Solicitudes de información realizadas por ti"
+
+msgid "Freedom of Information requests made by this person"
+msgstr "Solicitudes de información realizadas por este usuario"
+
+msgid "{{title}} - a Freedom of Information request to {{public_body}}"
+msgstr "{{title}} - una solicitud de información realizada a {{public_body}}"
+
+
+# Homepage
 
 msgid "Quiénes somos"
 msgstr "Qui som"
