@@ -25,6 +25,12 @@ msgstr "Solicitudes de información realizadas por este usuario"
 msgid "{{title}} - a Freedom of Information request to {{public_body}}"
 msgstr "{{title}} - una solicitud de información realizada a {{public_body}}"
 
+msgid "show quoted sections"
+msgstr "mostrar el resto del mensaje"
+
+msgid "hide quoted sections"
+msgstr "ocultar el final del mensaje"
+
 
 # Homepage
 
