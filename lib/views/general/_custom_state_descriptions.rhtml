@@ -1,0 +1,5 @@
+<% if status == 'unsatisfactory_response' %>
+    <%= _("The response has been unsatisfactory.") %>
+<% else %>
+    <% raise "unknown status " + status %>
+<% end %>

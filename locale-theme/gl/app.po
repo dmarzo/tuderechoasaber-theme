@@ -107,3 +107,19 @@ msgstr "API para programadores"
 
 msgid "Agradecimientos"
 msgstr "Agradecementos"
+
+
+
+# Custom states
+
+msgid "Authority has provided an unsatisfactory response."
+msgstr "La respuesta no ha sido satisfactoria."
+
+msgid "Unsatisfactory response."
+msgstr "Respuesta no satisfactoria."
+
+msgid "Authority has provided an <strong>unsatisfactory response</strong>"
+msgstr "La respuesta <strong>no ha sido satisfactoria</strong>"
+
+msgid "The response has been unsatisfactory."
+msgstr "La respuesta no ha sido satisfactoria."

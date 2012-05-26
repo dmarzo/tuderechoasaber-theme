@@ -838,6 +838,11 @@ TODO: Need to add states for
     background-image: url("/tuderechoasaber-theme/images/states/icon_user_withdrawn.gif");
     color: #E10613;
 }
+.icon_unsatisfactory_response {
+    background-image: url("/tuderechoasaber-theme/images/states/icon_info_refused.gif");
+    color: #E10613;
+}
+
 /* TODO: Missing from designer
 .icon_waiting_classification {
 .icon_waiting_response_overdue {
