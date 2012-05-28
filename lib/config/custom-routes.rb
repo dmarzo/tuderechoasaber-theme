@@ -7,6 +7,8 @@ if ENV["RAILS_ENV"] != "test"
             help.help_press '/help/press', :action => 'press'
             help.help_privacy_policy '/help/privacy_policy', :action => 'privacy_policy'
             help.help_terms_of_use '/help/terms_of_use', :action => 'terms_of_use'
+            
+            help.help_borrador_transparencia '/help/borrador_transparencia', :action => 'borrador_transparencia'
         end
         
         # We want to start by showing the public bodies categories and search only
