@@ -343,7 +343,15 @@ h3, h3 a {
         text-decoration: underline !important;
         font-weight: bold;
     }
-
+    #frontpage-lead-ad input[type="submit"] {
+        height: 34px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+    #frontpage-lead-ad input[type="email"] {
+        font-size: 14px;
+    }
+    
 #frontpage-content {
     background-color: #F5F5F5;
 }
