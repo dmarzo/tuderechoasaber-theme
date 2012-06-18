@@ -88,7 +88,7 @@ Dispatcher.to_prepare do
 				double_optin, 
 				update_existing,
 				replace_interests,
-				send_welcome)
+				send_welcome) 
 
 			RAILS_DEFAULT_LOGGER.info("\n Registration for newsletter email:#{emailToSubscribe} successful: #{response}")		
 		end
