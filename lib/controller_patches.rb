@@ -59,7 +59,7 @@ Dispatcher.to_prepare do
 					send_confirmation_mail @user_signup
 					
 					#UserController.signup modification
-					if params[:newsletter]=='1' then registerToNewsletter(@user_signup) end
+					if params[:newsletter]=='1' then registerInNewsletter(@user_signup) end
 					#end
 								
 					return
@@ -67,29 +67,30 @@ Dispatcher.to_prepare do
 			end
 		end
 		
-		def registerToNewsletter(user_created)	
-			gb = Gibbon.new(MySociety::Config.get('MAILCHIMP_API_KEY', 'provide_your_mailchiimp_api_key'))
-			gb.timeout = 15
+		def registerInNewsletter(user_created)	
+		    require 'hominid'	
+		    h = Hominid::API.new(MySociety::Config.get('MAILCHIMP_API_KEY', 'provide_your_mailchiimp_api_key'), {:secure => true, :timeout => 15})
 			
 			#http://apidocs.mailchimp.com/api/rtfm/listsubscribe.func.php
-			listId = Gibbon.new(MySociety::Config.get('MAILCHIMP_LIST_ID', 'provide_your_list_unique_id'))
+			list_id = MySociety::Config.get('MAILCHIMP_LIST_ID', 'provide_your_list_unique_id')
+			emailToSubscribe = user_created.email
 			mergeOptions = {
 				:FNAME => user_created.name,
 				:OPTIN_IP => request.remote_ip
 			}
-			emailToSubscribe = user_created.email
-			response = gb.list_subscribe({
-				:id => listId, 
-				:email_address =>  emailToSubscribe, 
-				:merge_vars => mergeOptions,
-				:email_type => 'html', 
-				:double_optin => false, #flag to control whether a double opt-in confirmation message is sent
-				:update_existing => false,
-				:replace_interests => false,
-				:send_welcome => false 
-			})
-			
-			RAILS_DEFAULT_LOGGER.info("\n Registration for newsletter email:#{emailToSubscribe}  response: #{response["code"]} ")	
+			email_type = 'html'
+			double_optin = false #flag to control whether a double opt-in confirmation message is sent
+			update_existing = false
+			replace_interests = false
+			send_welcome = false 
+			RAILS_DEFAULT_LOGGER.info("\n antes de llamar a hominid")	
+			response = h.list_subscribe(list_id, emailToSubscribe, mergeOptions, email_type,
+				double_optin, 
+				update_existing,
+				replace_interests,
+				send_welcome)
+
+			RAILS_DEFAULT_LOGGER.info("\n Registration for newsletter email:#{emailToSubscribe} successful: #{response}")		
 		end
 	end
 	
